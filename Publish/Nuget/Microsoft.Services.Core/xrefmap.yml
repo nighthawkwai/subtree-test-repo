@@ -1,0 +1,1138 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Services.Core
+  name: Microsoft.Services.Core
+  href: api/Microsoft.Services.Core.html
+  commentId: N:Microsoft.Services.Core
+  fullName: Microsoft.Services.Core
+  nameWithType: Microsoft.Services.Core
+- uid: Microsoft.Services.Core.Collections
+  name: Microsoft.Services.Core.Collections
+  href: api/Microsoft.Services.Core.Collections.html
+  commentId: N:Microsoft.Services.Core.Collections
+  fullName: Microsoft.Services.Core.Collections
+  nameWithType: Microsoft.Services.Core.Collections
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  name: ConcurrentHashSet<T>
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html
+  commentId: T:Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  name.vb: ConcurrentHashSet(Of T)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T)
+  nameWithType: ConcurrentHashSet<T>
+  nameWithType.vb: ConcurrentHashSet(Of T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  name: ConcurrentHashSet()
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1__ctor
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet()
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet()
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet()
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(IEnumerable{`0})
+  name: ConcurrentHashSet(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1__ctor_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(IEnumerable{`0})
+  name.vb: ConcurrentHashSet(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(IEqualityComparer{`0})
+  name: ConcurrentHashSet(IEqualityComparer<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1__ctor_IEqualityComparer__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(IEqualityComparer{`0})
+  name.vb: ConcurrentHashSet(IEqualityComparer(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet(IEqualityComparer<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet(IEqualityComparer(Of T))
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet(IEqualityComparer<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet(IEqualityComparer(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor*
+  name: ConcurrentHashSet
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1__ctor_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add(`0)
+  name: Add(T)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Add__0_
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add(`0)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Add(T)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Add(T)
+  nameWithType: ConcurrentHashSet<T>.Add(T)
+  nameWithType.vb: ConcurrentHashSet(Of T).Add(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add*
+  name: Add
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Add_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Add
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Add
+  nameWithType: ConcurrentHashSet<T>.Add
+  nameWithType.vb: ConcurrentHashSet(Of T).Add
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  name: Clear()
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Clear
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Clear()
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Clear()
+  nameWithType: ConcurrentHashSet<T>.Clear()
+  nameWithType.vb: ConcurrentHashSet(Of T).Clear()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear*
+  name: Clear
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Clear_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Clear
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Clear
+  nameWithType: ConcurrentHashSet<T>.Clear
+  nameWithType.vb: ConcurrentHashSet(Of T).Clear
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  name: Comparer
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Comparer
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Comparer
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Comparer
+  nameWithType: ConcurrentHashSet<T>.Comparer
+  nameWithType.vb: ConcurrentHashSet(Of T).Comparer
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer*
+  name: Comparer
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Comparer_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Comparer
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Comparer
+  nameWithType: ConcurrentHashSet<T>.Comparer
+  nameWithType.vb: ConcurrentHashSet(Of T).Comparer
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains(`0)
+  name: Contains(T)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Contains__0_
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains(`0)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Contains(T)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Contains(T)
+  nameWithType: ConcurrentHashSet<T>.Contains(T)
+  nameWithType.vb: ConcurrentHashSet(Of T).Contains(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains*
+  name: Contains
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Contains_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Contains
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Contains
+  nameWithType: ConcurrentHashSet<T>.Contains
+  nameWithType.vb: ConcurrentHashSet(Of T).Contains
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_CopyTo__0___System_Int32_
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.CopyTo(T[], System.Int32)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).CopyTo(T(), System.Int32)
+  nameWithType: ConcurrentHashSet<T>.CopyTo(T[], Int32)
+  nameWithType.vb: ConcurrentHashSet(Of T).CopyTo(T(), Int32)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo*
+  name: CopyTo
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_CopyTo_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.CopyTo
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).CopyTo
+  nameWithType: ConcurrentHashSet<T>.CopyTo
+  nameWithType.vb: ConcurrentHashSet(Of T).CopyTo
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  name: Count
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Count
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Count
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Count
+  nameWithType: ConcurrentHashSet<T>.Count
+  nameWithType.vb: ConcurrentHashSet(Of T).Count
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count*
+  name: Count
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Count_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Count
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Count
+  nameWithType: ConcurrentHashSet<T>.Count
+  nameWithType.vb: ConcurrentHashSet(Of T).Count
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith(IEnumerable{`0})
+  name: ExceptWith(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_ExceptWith_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith(IEnumerable{`0})
+  name.vb: ExceptWith(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ExceptWith(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ExceptWith(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.ExceptWith(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).ExceptWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith*
+  name: ExceptWith
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_ExceptWith_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ExceptWith
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ExceptWith
+  nameWithType: ConcurrentHashSet<T>.ExceptWith
+  nameWithType.vb: ConcurrentHashSet(Of T).ExceptWith
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_GetEnumerator
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.GetEnumerator()
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).GetEnumerator()
+  nameWithType: ConcurrentHashSet<T>.GetEnumerator()
+  nameWithType.vb: ConcurrentHashSet(Of T).GetEnumerator()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_GetEnumerator_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.GetEnumerator
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).GetEnumerator
+  nameWithType: ConcurrentHashSet<T>.GetEnumerator
+  nameWithType.vb: ConcurrentHashSet(Of T).GetEnumerator
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith(IEnumerable{`0})
+  name: IntersectWith(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IntersectWith_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith(IEnumerable{`0})
+  name.vb: IntersectWith(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IntersectWith(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IntersectWith(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.IntersectWith(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).IntersectWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith*
+  name: IntersectWith
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IntersectWith_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IntersectWith
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IntersectWith
+  nameWithType: ConcurrentHashSet<T>.IntersectWith
+  nameWithType.vb: ConcurrentHashSet(Of T).IntersectWith
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf(IEnumerable{`0})
+  name: IsProperSubsetOf(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsProperSubsetOf_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf(IEnumerable{`0})
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSubsetOf(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSubsetOf(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.IsProperSubsetOf(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSubsetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf*
+  name: IsProperSubsetOf
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsProperSubsetOf_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSubsetOf
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSubsetOf
+  nameWithType: ConcurrentHashSet<T>.IsProperSubsetOf
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSubsetOf
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf(IEnumerable{`0})
+  name: IsProperSupersetOf(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsProperSupersetOf_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf(IEnumerable{`0})
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSupersetOf(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSupersetOf(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.IsProperSupersetOf(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSupersetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf*
+  name: IsProperSupersetOf
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsProperSupersetOf_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSupersetOf
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSupersetOf
+  nameWithType: ConcurrentHashSet<T>.IsProperSupersetOf
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSupersetOf
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  name: IsReadOnly
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsReadOnly
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsReadOnly
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsReadOnly
+  nameWithType: ConcurrentHashSet<T>.IsReadOnly
+  nameWithType.vb: ConcurrentHashSet(Of T).IsReadOnly
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsReadOnly_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsReadOnly
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsReadOnly
+  nameWithType: ConcurrentHashSet<T>.IsReadOnly
+  nameWithType.vb: ConcurrentHashSet(Of T).IsReadOnly
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf(IEnumerable{`0})
+  name: IsSubsetOf(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsSubsetOf_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf(IEnumerable{`0})
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSubsetOf(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSubsetOf(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.IsSubsetOf(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSubsetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf*
+  name: IsSubsetOf
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsSubsetOf_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSubsetOf
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSubsetOf
+  nameWithType: ConcurrentHashSet<T>.IsSubsetOf
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSubsetOf
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf(IEnumerable{`0})
+  name: IsSupersetOf(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsSupersetOf_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf(IEnumerable{`0})
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSupersetOf(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSupersetOf(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.IsSupersetOf(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSupersetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf*
+  name: IsSupersetOf
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_IsSupersetOf_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSupersetOf
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSupersetOf
+  nameWithType: ConcurrentHashSet<T>.IsSupersetOf
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSupersetOf
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps(IEnumerable{`0})
+  name: Overlaps(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Overlaps_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps(IEnumerable{`0})
+  name.vb: Overlaps(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Overlaps(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Overlaps(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.Overlaps(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).Overlaps(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps*
+  name: Overlaps
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Overlaps_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Overlaps
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Overlaps
+  nameWithType: ConcurrentHashSet<T>.Overlaps
+  nameWithType.vb: ConcurrentHashSet(Of T).Overlaps
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove(`0)
+  name: Remove(T)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Remove__0_
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove(`0)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Remove(T)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Remove(T)
+  nameWithType: ConcurrentHashSet<T>.Remove(T)
+  nameWithType.vb: ConcurrentHashSet(Of T).Remove(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove*
+  name: Remove
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_Remove_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Remove
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Remove
+  nameWithType: ConcurrentHashSet<T>.Remove
+  nameWithType.vb: ConcurrentHashSet(Of T).Remove
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals(IEnumerable{`0})
+  name: SetEquals(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_SetEquals_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals(IEnumerable{`0})
+  name.vb: SetEquals(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SetEquals(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SetEquals(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.SetEquals(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).SetEquals(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals*
+  name: SetEquals
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_SetEquals_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SetEquals
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SetEquals
+  nameWithType: ConcurrentHashSet<T>.SetEquals
+  nameWithType.vb: ConcurrentHashSet(Of T).SetEquals
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith(IEnumerable{`0})
+  name: SymmetricExceptWith(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_SymmetricExceptWith_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith(IEnumerable{`0})
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SymmetricExceptWith(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SymmetricExceptWith(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.SymmetricExceptWith(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).SymmetricExceptWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith*
+  name: SymmetricExceptWith
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_SymmetricExceptWith_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SymmetricExceptWith
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SymmetricExceptWith
+  nameWithType: ConcurrentHashSet<T>.SymmetricExceptWith
+  nameWithType.vb: ConcurrentHashSet(Of T).SymmetricExceptWith
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith(IEnumerable{`0})
+  name: UnionWith(IEnumerable<T>)
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_UnionWith_IEnumerable__0__
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith(IEnumerable{`0})
+  name.vb: UnionWith(IEnumerable(Of T))
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.UnionWith(IEnumerable<T>)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).UnionWith(IEnumerable(Of T))
+  nameWithType: ConcurrentHashSet<T>.UnionWith(IEnumerable<T>)
+  nameWithType.vb: ConcurrentHashSet(Of T).UnionWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith*
+  name: UnionWith
+  href: api/Microsoft.Services.Core.Collections.ConcurrentHashSet-1.html#Microsoft_Services_Core_Collections_ConcurrentHashSet_1_UnionWith_
+  commentId: Overload:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.UnionWith
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).UnionWith
+  nameWithType: ConcurrentHashSet<T>.UnionWith
+  nameWithType.vb: ConcurrentHashSet(Of T).UnionWith
+- uid: Microsoft.Services.Core.Contract
+  name: Contract
+  href: api/Microsoft.Services.Core.Contract.html
+  commentId: T:Microsoft.Services.Core.Contract
+  fullName: Microsoft.Services.Core.Contract
+  nameWithType: Contract
+- uid: Microsoft.Services.Core.Contract.AssertArgNotNull(System.Object,System.String,System.String,System.String,System.Int32)
+  name: AssertArgNotNull(Object, String, String, String, Int32)
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertArgNotNull_System_Object_System_String_System_String_System_String_System_Int32_
+  commentId: M:Microsoft.Services.Core.Contract.AssertArgNotNull(System.Object,System.String,System.String,System.String,System.Int32)
+  fullName: Microsoft.Services.Core.Contract.AssertArgNotNull(System.Object, System.String, System.String, System.String, System.Int32)
+  nameWithType: Contract.AssertArgNotNull(Object, String, String, String, Int32)
+- uid: Microsoft.Services.Core.Contract.AssertArgNotNull*
+  name: AssertArgNotNull
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertArgNotNull_
+  commentId: Overload:Microsoft.Services.Core.Contract.AssertArgNotNull
+  fullName: Microsoft.Services.Core.Contract.AssertArgNotNull
+  nameWithType: Contract.AssertArgNotNull
+- uid: Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace(System.String,System.String,System.String,System.String,System.Int32)
+  name: AssertArgNotNullOrEmptyOrWhitespace(String, String, String, String, Int32)
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertArgNotNullOrEmptyOrWhitespace_System_String_System_String_System_String_System_String_System_Int32_
+  commentId: M:Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace(System.String,System.String,System.String,System.String,System.Int32)
+  fullName: Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace(System.String, System.String, System.String, System.String, System.Int32)
+  nameWithType: Contract.AssertArgNotNullOrEmptyOrWhitespace(String, String, String, String, Int32)
+- uid: Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace*
+  name: AssertArgNotNullOrEmptyOrWhitespace
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertArgNotNullOrEmptyOrWhitespace_
+  commentId: Overload:Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace
+  fullName: Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace
+  nameWithType: Contract.AssertArgNotNullOrEmptyOrWhitespace
+- uid: Microsoft.Services.Core.Contract.AssertNotNull(System.Object,System.String,System.String,System.String,System.String,System.Int32)
+  name: AssertNotNull(Object, String, String, String, String, Int32)
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertNotNull_System_Object_System_String_System_String_System_String_System_String_System_Int32_
+  commentId: M:Microsoft.Services.Core.Contract.AssertNotNull(System.Object,System.String,System.String,System.String,System.String,System.Int32)
+  fullName: Microsoft.Services.Core.Contract.AssertNotNull(System.Object, System.String, System.String, System.String, System.String, System.Int32)
+  nameWithType: Contract.AssertNotNull(Object, String, String, String, String, Int32)
+- uid: Microsoft.Services.Core.Contract.AssertNotNull*
+  name: AssertNotNull
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_AssertNotNull_
+  commentId: Overload:Microsoft.Services.Core.Contract.AssertNotNull
+  fullName: Microsoft.Services.Core.Contract.AssertNotNull
+  nameWithType: Contract.AssertNotNull
+- uid: Microsoft.Services.Core.Contract.Requires*
+  name: Requires
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_Requires_
+  commentId: Overload:Microsoft.Services.Core.Contract.Requires
+  fullName: Microsoft.Services.Core.Contract.Requires
+  nameWithType: Contract.Requires
+- uid: Microsoft.Services.Core.Contract.Requires``1(System.Boolean,System.String,System.String,System.String,System.Int32)
+  name: Requires<T>(Boolean, String, String, String, Int32)
+  href: api/Microsoft.Services.Core.Contract.html#Microsoft_Services_Core_Contract_Requires__1_System_Boolean_System_String_System_String_System_String_System_Int32_
+  commentId: M:Microsoft.Services.Core.Contract.Requires``1(System.Boolean,System.String,System.String,System.String,System.Int32)
+  name.vb: Requires(Of T)(Boolean, String, String, String, Int32)
+  fullName: Microsoft.Services.Core.Contract.Requires<T>(System.Boolean, System.String, System.String, System.String, System.Int32)
+  fullName.vb: Microsoft.Services.Core.Contract.Requires(Of T)(System.Boolean, System.String, System.String, System.String, System.Int32)
+  nameWithType: Contract.Requires<T>(Boolean, String, String, String, Int32)
+  nameWithType.vb: Contract.Requires(Of T)(Boolean, String, String, String, Int32)
+- uid: Microsoft.Services.Core.ExceptionHelper
+  name: ExceptionHelper
+  href: api/Microsoft.Services.Core.ExceptionHelper.html
+  commentId: T:Microsoft.Services.Core.ExceptionHelper
+  fullName: Microsoft.Services.Core.ExceptionHelper
+  nameWithType: ExceptionHelper
+- uid: Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType*
+  name: FindFirstExceptionOfType
+  href: api/Microsoft.Services.Core.ExceptionHelper.html#Microsoft_Services_Core_ExceptionHelper_FindFirstExceptionOfType_
+  commentId: Overload:Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType
+  fullName: Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType
+  nameWithType: ExceptionHelper.FindFirstExceptionOfType
+- uid: Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType``1(Exception)
+  name: FindFirstExceptionOfType<T>(Exception)
+  href: api/Microsoft.Services.Core.ExceptionHelper.html#Microsoft_Services_Core_ExceptionHelper_FindFirstExceptionOfType__1_Exception_
+  commentId: M:Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType``1(Exception)
+  name.vb: FindFirstExceptionOfType(Of T)(Exception)
+  fullName: Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType<T>(Exception)
+  fullName.vb: Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType(Of T)(Exception)
+  nameWithType: ExceptionHelper.FindFirstExceptionOfType<T>(Exception)
+  nameWithType.vb: ExceptionHelper.FindFirstExceptionOfType(Of T)(Exception)
+- uid: Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString(Exception,System.Int32,System.Boolean)
+  name: GetIndentedExceptionString(Exception, Int32, Boolean)
+  href: api/Microsoft.Services.Core.ExceptionHelper.html#Microsoft_Services_Core_ExceptionHelper_GetIndentedExceptionString_Exception_System_Int32_System_Boolean_
+  commentId: M:Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString(Exception,System.Int32,System.Boolean)
+  fullName: Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString(Exception, System.Int32, System.Boolean)
+  nameWithType: ExceptionHelper.GetIndentedExceptionString(Exception, Int32, Boolean)
+- uid: Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString*
+  name: GetIndentedExceptionString
+  href: api/Microsoft.Services.Core.ExceptionHelper.html#Microsoft_Services_Core_ExceptionHelper_GetIndentedExceptionString_
+  commentId: Overload:Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString
+  fullName: Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString
+  nameWithType: ExceptionHelper.GetIndentedExceptionString
+- uid: Microsoft.Services.Core.Process
+  name: Microsoft.Services.Core.Process
+  href: api/Microsoft.Services.Core.Process.html
+  commentId: N:Microsoft.Services.Core.Process
+  fullName: Microsoft.Services.Core.Process
+  nameWithType: Microsoft.Services.Core.Process
+- uid: Microsoft.Services.Core.Process.JobObject
+  name: JobObject
+  href: api/Microsoft.Services.Core.Process.JobObject.html
+  commentId: T:Microsoft.Services.Core.Process.JobObject
+  fullName: Microsoft.Services.Core.Process.JobObject
+  nameWithType: JobObject
+- uid: Microsoft.Services.Core.Process.JobObject.#ctor(System.String)
+  name: JobObject(String)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject__ctor_System_String_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.#ctor(System.String)
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObject(System.String)
+  nameWithType: JobObject.JobObject(String)
+- uid: Microsoft.Services.Core.Process.JobObject.#ctor*
+  name: JobObject
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject__ctor_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.#ctor
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObject
+  nameWithType: JobObject.JobObject
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(SafeProcessHandle)
+  name: AddProcess(SafeProcessHandle)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_AddProcess_SafeProcessHandle_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(SafeProcessHandle)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(SafeProcessHandle)
+  nameWithType: JobObject.AddProcess(SafeProcessHandle)
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  name: AddProcess(System.Diagnostics.Process)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_AddProcess_System_Diagnostics_Process_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  nameWithType: JobObject.AddProcess(System.Diagnostics.Process)
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  name: AddProcess(Int32)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_AddProcess_System_Int32_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  nameWithType: JobObject.AddProcess(Int32)
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess*
+  name: AddProcess
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_AddProcess_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.AddProcess
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess
+  nameWithType: JobObject.AddProcess
+- uid: Microsoft.Services.Core.Process.JobObject.Dispose
+  name: Dispose()
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_Dispose
+  commentId: M:Microsoft.Services.Core.Process.JobObject.Dispose
+  fullName: Microsoft.Services.Core.Process.JobObject.Dispose()
+  nameWithType: JobObject.Dispose()
+- uid: Microsoft.Services.Core.Process.JobObject.Dispose*
+  name: Dispose
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_Dispose_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.Dispose
+  fullName: Microsoft.Services.Core.Process.JobObject.Dispose
+  nameWithType: JobObject.Dispose
+- uid: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  name: GetCurrentLimit()
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_GetCurrentLimit
+  commentId: M:Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  fullName: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit()
+  nameWithType: JobObject.GetCurrentLimit()
+- uid: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit*
+  name: GetCurrentLimit
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_GetCurrentLimit_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  fullName: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  nameWithType: JobObject.GetCurrentLimit
+- uid: Microsoft.Services.Core.Process.JobObject.JobObjectName
+  name: JobObjectName
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_JobObjectName
+  commentId: P:Microsoft.Services.Core.Process.JobObject.JobObjectName
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObjectName
+  nameWithType: JobObject.JobObjectName
+- uid: Microsoft.Services.Core.Process.JobObject.JobObjectName*
+  name: JobObjectName
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_JobObjectName_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.JobObjectName
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObjectName
+  nameWithType: JobObject.JobObjectName
+- uid: Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  name: SetJobLimits(JobObjectLimit)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_SetJobLimits_Microsoft_Services_Core_Process_JobObjectLimit_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  fullName: Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  nameWithType: JobObject.SetJobLimits(JobObjectLimit)
+- uid: Microsoft.Services.Core.Process.JobObject.SetJobLimits*
+  name: SetJobLimits
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_SetJobLimits_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.SetJobLimits
+  fullName: Microsoft.Services.Core.Process.JobObject.SetJobLimits
+  nameWithType: JobObject.SetJobLimits
+- uid: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  name: TerminateAllProcessesInJob(Int32)
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_TerminateAllProcessesInJob_System_Int32_
+  commentId: M:Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  fullName: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  nameWithType: JobObject.TerminateAllProcessesInJob(Int32)
+- uid: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob*
+  name: TerminateAllProcessesInJob
+  href: api/Microsoft.Services.Core.Process.JobObject.html#Microsoft_Services_Core_Process_JobObject_TerminateAllProcessesInJob_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob
+  fullName: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob
+  nameWithType: JobObject.TerminateAllProcessesInJob
+- uid: Microsoft.Services.Core.Process.JobObjectLimit
+  name: JobObjectLimit
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html
+  commentId: T:Microsoft.Services.Core.Process.JobObjectLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit
+  nameWithType: JobObjectLimit
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  name: KillAllProcessOnJobClose
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobClose
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  nameWithType: JobObjectLimit.KillAllProcessOnJobClose
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose*
+  name: KillAllProcessOnJobClose
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobClose_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  nameWithType: JobObjectLimit.KillAllProcessOnJobClose
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  name: KillAllProcessOnJobObjectClose(Boolean)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobObjectClose_System_Boolean_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  nameWithType: JobObjectLimit.KillAllProcessOnJobObjectClose(Boolean)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose*
+  name: KillAllProcessOnJobObjectClose
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobObjectClose_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose
+  nameWithType: JobObjectLimit.KillAllProcessOnJobObjectClose
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  name: MaxActiveProcesses
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxActiveProcesses
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  nameWithType: JobObjectLimit.MaxActiveProcesses
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses*
+  name: MaxActiveProcesses
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxActiveProcesses_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  nameWithType: JobObjectLimit.MaxActiveProcesses
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  name: MaxCpuPercentageLimit
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuPercentageLimit
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  nameWithType: JobObjectLimit.MaxCpuPercentageLimit
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit*
+  name: MaxCpuPercentageLimit
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuPercentageLimit_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  nameWithType: JobObjectLimit.MaxCpuPercentageLimit
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  name: MaxCpuRangePercentage
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuRangePercentage
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  nameWithType: JobObjectLimit.MaxCpuRangePercentage
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage*
+  name: MaxCpuRangePercentage
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuRangePercentage_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  nameWithType: JobObjectLimit.MaxCpuRangePercentage
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  name: MaxProcessCommitSize
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxProcessCommitSize
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  nameWithType: JobObjectLimit.MaxProcessCommitSize
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize*
+  name: MaxProcessCommitSize
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxProcessCommitSize_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  nameWithType: JobObjectLimit.MaxProcessCommitSize
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  name: MaxWorkingSet
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxWorkingSet
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  nameWithType: JobObjectLimit.MaxWorkingSet
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet*
+  name: MaxWorkingSet
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MaxWorkingSet_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  nameWithType: JobObjectLimit.MaxWorkingSet
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  name: MinCpuRangePercentage
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MinCpuRangePercentage
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  nameWithType: JobObjectLimit.MinCpuRangePercentage
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage*
+  name: MinCpuRangePercentage
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MinCpuRangePercentage_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  nameWithType: JobObjectLimit.MinCpuRangePercentage
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  name: MinWorkingset
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MinWorkingset
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  nameWithType: JobObjectLimit.MinWorkingset
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset*
+  name: MinWorkingset
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_MinWorkingset_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  nameWithType: JobObjectLimit.MinWorkingset
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  name: SetCpuLimit(UInt32)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_System_UInt32_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  nameWithType: JobObjectLimit.SetCpuLimit(UInt32)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  name: SetCpuLimit(UInt32, UInt32)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_System_UInt32_System_UInt32_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32, System.UInt32)
+  nameWithType: JobObjectLimit.SetCpuLimit(UInt32, UInt32)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit*
+  name: SetCpuLimit
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit
+  nameWithType: JobObjectLimit.SetCpuLimit
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  name: SetMaxActiveProcesses(UInt32)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetMaxActiveProcesses_System_UInt32_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  nameWithType: JobObjectLimit.SetMaxActiveProcesses(UInt32)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses*
+  name: SetMaxActiveProcesses
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetMaxActiveProcesses_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses
+  nameWithType: JobObjectLimit.SetMaxActiveProcesses
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  name: SetProcessCommitMemory(UInt64)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessCommitMemory_System_UInt64_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  nameWithType: JobObjectLimit.SetProcessCommitMemory(UInt64)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory*
+  name: SetProcessCommitMemory
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessCommitMemory_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory
+  nameWithType: JobObjectLimit.SetProcessCommitMemory
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  name: SetProcessworkingSetMemory(UInt64, UInt64)
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_System_UInt64_System_UInt64_
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64, System.UInt64)
+  nameWithType: JobObjectLimit.SetProcessworkingSetMemory(UInt64, UInt64)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory*
+  name: SetProcessworkingSetMemory
+  href: api/Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_
+  commentId: Overload:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory
+  nameWithType: JobObjectLimit.SetProcessworkingSetMemory
+- uid: Microsoft.Services.Core.Retries
+  name: Microsoft.Services.Core.Retries
+  href: api/Microsoft.Services.Core.Retries.html
+  commentId: N:Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.html
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  name: AllExceptionsAreTransientErrorDetectionStrategy
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.html
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  name: GetExtendedDetails(Exception)
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_GetExtendedDetails_Exception_
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails*
+  name: GetExtendedDetails
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_GetExtendedDetails_
+  commentId: Overload:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)
+  name: IsTransient(Exception)
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_IsTransient_Exception_
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient*
+  name: IsTransient
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_IsTransient_
+  commentId: Overload:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.IsTransient
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  name: ITransientErrorDetectionStrategy
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  nameWithType: ITransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  name: GetExtendedDetails(Exception)
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_GetExtendedDetails_Exception_
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails*
+  name: GetExtendedDetails
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_GetExtendedDetails_
+  commentId: Overload:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails
+  nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(Exception)
+  name: IsTransient(Exception)
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_IsTransient_Exception_
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.IsTransient(Exception)
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient*
+  name: IsTransient
+  href: api/Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_IsTransient_
+  commentId: Overload:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient
+  nameWithType: ITransientErrorDetectionStrategy.IsTransient
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+  name: RetryingEventArgs
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html
+  commentId: T:Microsoft.Services.Core.Retries.RetryingEventArgs
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs
+  nameWithType: RetryingEventArgs
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor(System.Int32,TimeSpan,Exception)
+  name: RetryingEventArgs(Int32, TimeSpan, Exception)
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs__ctor_System_Int32_TimeSpan_Exception_
+  commentId: M:Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor(System.Int32,TimeSpan,Exception)
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.RetryingEventArgs(System.Int32, TimeSpan, Exception)
+  nameWithType: RetryingEventArgs.RetryingEventArgs(Int32, TimeSpan, Exception)
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor*
+  name: RetryingEventArgs
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs__ctor_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.RetryingEventArgs
+  nameWithType: RetryingEventArgs.RetryingEventArgs
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  name: CallingMethod
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_CallingMethod
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  nameWithType: RetryingEventArgs.CallingMethod
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod*
+  name: CallingMethod
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_CallingMethod_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  nameWithType: RetryingEventArgs.CallingMethod
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  name: CurrentRetryCount
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_CurrentRetryCount
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  nameWithType: RetryingEventArgs.CurrentRetryCount
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount*
+  name: CurrentRetryCount
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_CurrentRetryCount_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  nameWithType: RetryingEventArgs.CurrentRetryCount
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  name: Delay
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_Delay
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  nameWithType: RetryingEventArgs.Delay
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay*
+  name: Delay
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_Delay_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  nameWithType: RetryingEventArgs.Delay
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  name: LastException
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_LastException
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  nameWithType: RetryingEventArgs.LastException
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException*
+  name: LastException
+  href: api/Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs_LastException_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  nameWithType: RetryingEventArgs.LastException
+- uid: Microsoft.Services.Core.Retries.RetryPolicy
+  name: RetryPolicy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html
+  commentId: T:Microsoft.Services.Core.Retries.RetryPolicy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy
+  nameWithType: RetryPolicy
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  name: RetryPolicy(ITransientErrorDetectionStrategy, RetryStrategy)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy__ctor_Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryPolicy(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy, Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  nameWithType: RetryPolicy.RetryPolicy(ITransientErrorDetectionStrategy, RetryStrategy)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.#ctor*
+  name: RetryPolicy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy__ctor_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.#ctor
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryPolicy
+  nameWithType: RetryPolicy.RetryPolicy
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  name: ErrorDetectionStrategy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ErrorDetectionStrategy
+  commentId: P:Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  nameWithType: RetryPolicy.ErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy*
+  name: ErrorDetectionStrategy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ErrorDetectionStrategy_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  nameWithType: RetryPolicy.ErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.Execute*
+  name: Execute
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_Execute_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.Execute
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.Execute
+  nameWithType: RetryPolicy.Execute
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(Func{``0},CancellationToken)
+  name: Execute<TResult>(Func<TResult>, CancellationToken)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_Execute__1_Func___0__CancellationToken_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(Func{``0},CancellationToken)
+  name.vb: Execute(Of TResult)(Func(Of TResult), CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.Execute<TResult>(Func<TResult>, CancellationToken)
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.Execute(Of TResult)(Func(Of TResult), CancellationToken)
+  nameWithType: RetryPolicy.Execute<TResult>(Func<TResult>, CancellationToken)
+  nameWithType.vb: RetryPolicy.Execute(Of TResult)(Func(Of TResult), CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(Action,CancellationToken)
+  name: ExecuteAction(Action, CancellationToken)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAction_Action_CancellationToken_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(Action,CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(Action, CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAction(Action, CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction*
+  name: ExecuteAction
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAction_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction
+  nameWithType: RetryPolicy.ExecuteAction
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Func{Task},CancellationToken)
+  name: ExecuteAsync(Func<Task>, CancellationToken)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_Func_Task__CancellationToken_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Func{Task},CancellationToken)
+  name.vb: ExecuteAsync(Func(Of Task), CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Func<Task>, CancellationToken)
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Func(Of Task), CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAsync(Func<Task>, CancellationToken)
+  nameWithType.vb: RetryPolicy.ExecuteAsync(Func(Of Task), CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync
+  nameWithType: RetryPolicy.ExecuteAsync
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(Func{Task{``0}},CancellationToken)
+  name: ExecuteAsync<TResult>(Func<Task<TResult>>, CancellationToken)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync__1_Func_Task___0___CancellationToken_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(Func{Task{``0}},CancellationToken)
+  name.vb: ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)), CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync<TResult>(Func<Task<TResult>>, CancellationToken)
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)), CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAsync<TResult>(Func<Task<TResult>>, CancellationToken)
+  nameWithType.vb: RetryPolicy.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)), CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,Exception,TimeSpan)
+  name: OnRetrying(Int32, Exception, TimeSpan)
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_OnRetrying_System_Int32_Exception_TimeSpan_
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,Exception,TimeSpan)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32, Exception, TimeSpan)
+  nameWithType: RetryPolicy.OnRetrying(Int32, Exception, TimeSpan)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying*
+  name: OnRetrying
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_OnRetrying_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying
+  nameWithType: RetryPolicy.OnRetrying
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  name: Retrying
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_Retrying
+  commentId: E:Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  nameWithType: RetryPolicy.Retrying
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  name: RetryStrategy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_RetryStrategy
+  commentId: P:Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  nameWithType: RetryPolicy.RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy*
+  name: RetryStrategy
+  href: api/Microsoft.Services.Core.Retries.RetryPolicy.html#Microsoft_Services_Core_Retries_RetryPolicy_RetryStrategy_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  nameWithType: RetryPolicy.RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.html
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  name: ExponentialBackoff
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.html
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  nameWithType: ExponentialBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor(System.Int32,TimeSpan,TimeSpan,TimeSpan)
+  name: ExponentialBackoff(Int32, TimeSpan, TimeSpan, TimeSpan)
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.html#Microsoft_Services_Core_Retries_RetryStrategies_ExponentialBackoff__ctor_System_Int32_TimeSpan_TimeSpan_TimeSpan_
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor(System.Int32,TimeSpan,TimeSpan,TimeSpan)
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.ExponentialBackoff(System.Int32, TimeSpan, TimeSpan, TimeSpan)
+  nameWithType: ExponentialBackoff.ExponentialBackoff(Int32, TimeSpan, TimeSpan, TimeSpan)
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor*
+  name: ExponentialBackoff
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.html#Microsoft_Services_Core_Retries_RetryStrategies_ExponentialBackoff__ctor_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.ExponentialBackoff
+  nameWithType: ExponentialBackoff.ExponentialBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  name: GetShouldRetry()
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.html#Microsoft_Services_Core_Retries_RetryStrategies_ExponentialBackoff_GetShouldRetry
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry()
+  nameWithType: ExponentialBackoff.GetShouldRetry()
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry*
+  name: GetShouldRetry
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.html#Microsoft_Services_Core_Retries_RetryStrategies_ExponentialBackoff_GetShouldRetry_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  nameWithType: ExponentialBackoff.GetShouldRetry
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  name: RetryStrategy
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  nameWithType: RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  name: DefaultClientBackoff
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_DefaultClientBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  nameWithType: RetryStrategy.DefaultClientBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  name: DefaultClientRetryCount
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_DefaultClientRetryCount
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  nameWithType: RetryStrategy.DefaultClientRetryCount
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  name: DefaultMaxBackoff
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_DefaultMaxBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  nameWithType: RetryStrategy.DefaultMaxBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  name: DefaultMinBackoff
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_DefaultMinBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  nameWithType: RetryStrategy.DefaultMinBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  name: DefaultRetryInterval
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_DefaultRetryInterval
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  nameWithType: RetryStrategy.DefaultRetryInterval
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  name: GetShouldRetry()
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_GetShouldRetry
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry()
+  nameWithType: RetryStrategy.GetShouldRetry()
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry*
+  name: GetShouldRetry
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_GetShouldRetry_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  nameWithType: RetryStrategy.GetShouldRetry
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  name: MaxRetryCount
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_MaxRetryCount
+  commentId: P:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  nameWithType: RetryStrategy.MaxRetryCount
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount*
+  name: MaxRetryCount
+  href: api/Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_MaxRetryCount_
+  commentId: Overload:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  nameWithType: RetryStrategy.MaxRetryCount
+- uid: Microsoft.Services.Core.Retries.ShouldRetry
+  name: ShouldRetry
+  href: api/Microsoft.Services.Core.Retries.ShouldRetry.html
+  commentId: T:Microsoft.Services.Core.Retries.ShouldRetry
+  fullName: Microsoft.Services.Core.Retries.ShouldRetry
+  nameWithType: ShouldRetry
+- uid: Microsoft.Services.Core.StringValueAttribute
+  name: StringValueAttribute
+  href: api/Microsoft.Services.Core.StringValueAttribute.html
+  commentId: T:Microsoft.Services.Core.StringValueAttribute
+  fullName: Microsoft.Services.Core.StringValueAttribute
+  nameWithType: StringValueAttribute
+- uid: Microsoft.Services.Core.StringValueAttribute.#ctor(System.String)
+  name: StringValueAttribute(String)
+  href: api/Microsoft.Services.Core.StringValueAttribute.html#Microsoft_Services_Core_StringValueAttribute__ctor_System_String_
+  commentId: M:Microsoft.Services.Core.StringValueAttribute.#ctor(System.String)
+  fullName: Microsoft.Services.Core.StringValueAttribute.StringValueAttribute(System.String)
+  nameWithType: StringValueAttribute.StringValueAttribute(String)
+- uid: Microsoft.Services.Core.StringValueAttribute.#ctor*
+  name: StringValueAttribute
+  href: api/Microsoft.Services.Core.StringValueAttribute.html#Microsoft_Services_Core_StringValueAttribute__ctor_
+  commentId: Overload:Microsoft.Services.Core.StringValueAttribute.#ctor
+  fullName: Microsoft.Services.Core.StringValueAttribute.StringValueAttribute
+  nameWithType: StringValueAttribute.StringValueAttribute
+- uid: Microsoft.Services.Core.StringValueAttribute.Value
+  name: Value
+  href: api/Microsoft.Services.Core.StringValueAttribute.html#Microsoft_Services_Core_StringValueAttribute_Value
+  commentId: P:Microsoft.Services.Core.StringValueAttribute.Value
+  fullName: Microsoft.Services.Core.StringValueAttribute.Value
+  nameWithType: StringValueAttribute.Value
+- uid: Microsoft.Services.Core.StringValueAttribute.Value*
+  name: Value
+  href: api/Microsoft.Services.Core.StringValueAttribute.html#Microsoft_Services_Core_StringValueAttribute_Value_
+  commentId: Overload:Microsoft.Services.Core.StringValueAttribute.Value
+  fullName: Microsoft.Services.Core.StringValueAttribute.Value
+  nameWithType: StringValueAttribute.Value
+- uid: Microsoft.Services.Core.StringValueAttributeExtensions
+  name: StringValueAttributeExtensions
+  href: api/Microsoft.Services.Core.StringValueAttributeExtensions.html
+  commentId: T:Microsoft.Services.Core.StringValueAttributeExtensions
+  fullName: Microsoft.Services.Core.StringValueAttributeExtensions
+  nameWithType: StringValueAttributeExtensions
+- uid: Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue(Enum)
+  name: ToStringValue(Enum)
+  href: api/Microsoft.Services.Core.StringValueAttributeExtensions.html#Microsoft_Services_Core_StringValueAttributeExtensions_ToStringValue_Enum_
+  commentId: M:Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue(Enum)
+  fullName: Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue(Enum)
+  nameWithType: StringValueAttributeExtensions.ToStringValue(Enum)
+- uid: Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue*
+  name: ToStringValue
+  href: api/Microsoft.Services.Core.StringValueAttributeExtensions.html#Microsoft_Services_Core_StringValueAttributeExtensions_ToStringValue_
+  commentId: Overload:Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue
+  fullName: Microsoft.Services.Core.StringValueAttributeExtensions.ToStringValue
+  nameWithType: StringValueAttributeExtensions.ToStringValue
