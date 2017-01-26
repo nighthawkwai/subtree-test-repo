@@ -1,0 +1,102 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Services.CodeGen
+  name: Microsoft.Services.CodeGen
+  href: api/Microsoft.Services.CodeGen.html
+  commentId: N:Microsoft.Services.CodeGen
+  fullName: Microsoft.Services.CodeGen
+  nameWithType: Microsoft.Services.CodeGen
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator
+  name: CastleInterfaceProxyGenerator
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html
+  commentId: T:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator
+  nameWithType: CastleInterfaceProxyGenerator
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.#ctor
+  name: CastleInterfaceProxyGenerator()
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator__ctor
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.#ctor
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CastleInterfaceProxyGenerator()
+  nameWithType: CastleInterfaceProxyGenerator.CastleInterfaceProxyGenerator()
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.#ctor*
+  name: CastleInterfaceProxyGenerator
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator__ctor_
+  commentId: Overload:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.#ctor
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CastleInterfaceProxyGenerator
+  nameWithType: CastleInterfaceProxyGenerator.CastleInterfaceProxyGenerator
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type,IInterceptor[])
+  name: CreateInterfaceProxyWithoutTarget(Type, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithoutTarget_Type_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithoutTarget(Type, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type,ProxyGenerationOptions,IInterceptor[])
+  name: CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithoutTarget_Type_ProxyGenerationOptions_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type,ProxyGenerationOptions,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Type, ProxyGenerationOptions, IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget*
+  name: CreateInterfaceProxyWithoutTarget
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithoutTarget_
+  commentId: Overload:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget``1(IInterceptor[])
+  name: CreateInterfaceProxyWithoutTarget<T>(IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithoutTarget__1_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget``1(IInterceptor[])
+  name.vb: CreateInterfaceProxyWithoutTarget(Of T)(IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget<T>(IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Of T)(IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget<T>(IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Of T)(IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget``1(ProxyGenerationOptions,IInterceptor[])
+  name: CreateInterfaceProxyWithoutTarget<T>(ProxyGenerationOptions, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithoutTarget__1_ProxyGenerationOptions_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget``1(ProxyGenerationOptions,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithoutTarget(Of T)(ProxyGenerationOptions, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget<T>(ProxyGenerationOptions, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Of T)(ProxyGenerationOptions, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget<T>(ProxyGenerationOptions, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithoutTarget(Of T)(ProxyGenerationOptions, IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type,System.Object,ProxyGenerationOptions,IInterceptor[])
+  name: CreateInterfaceProxyWithTarget(Type, Object, ProxyGenerationOptions, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithTarget_Type_System_Object_ProxyGenerationOptions_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type,System.Object,ProxyGenerationOptions,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithTarget(Type, Object, ProxyGenerationOptions, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type, System.Object, ProxyGenerationOptions, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type, System.Object, ProxyGenerationOptions, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type, Object, ProxyGenerationOptions, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Type, Object, ProxyGenerationOptions, IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget*
+  name: CreateInterfaceProxyWithTarget
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithTarget_
+  commentId: Overload:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget``1(``0,IInterceptor[])
+  name: CreateInterfaceProxyWithTarget<T>(T, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithTarget__1___0_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget``1(``0,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithTarget(Of T)(T, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget<T>(T, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Of T)(T, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget<T>(T, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Of T)(T, IInterceptor())
+- uid: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget``1(``0,ProxyGenerationOptions,IInterceptor[])
+  name: CreateInterfaceProxyWithTarget<T>(T, ProxyGenerationOptions, IInterceptor[])
+  href: api/Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.html#Microsoft_Services_CodeGen_CastleInterfaceProxyGenerator_CreateInterfaceProxyWithTarget__1___0_ProxyGenerationOptions_IInterceptor___
+  commentId: M:Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget``1(``0,ProxyGenerationOptions,IInterceptor[])
+  name.vb: CreateInterfaceProxyWithTarget(Of T)(T, ProxyGenerationOptions, IInterceptor())
+  fullName: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget<T>(T, ProxyGenerationOptions, IInterceptor[])
+  fullName.vb: Microsoft.Services.CodeGen.CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Of T)(T, ProxyGenerationOptions, IInterceptor())
+  nameWithType: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget<T>(T, ProxyGenerationOptions, IInterceptor[])
+  nameWithType.vb: CastleInterfaceProxyGenerator.CreateInterfaceProxyWithTarget(Of T)(T, ProxyGenerationOptions, IInterceptor())
