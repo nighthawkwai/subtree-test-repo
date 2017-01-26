@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Contract
    ">
-    <meta name="generator" content="docfx 2.11.1.0">
+    <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -33,7 +33,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -71,7 +70,7 @@
               
               <h1 id="Microsoft_Services_Core_Contract" data-uid="Microsoft.Services.Core.Contract">Class Contract
               </h1>
-              <div class="markdown level0 summary"><p>A contracts class that mimics the functionality of <see cref="!:System.Diagnostics.Contracts"></see></p>
+              <div class="markdown level0 summary"><p>A contracts class that mimics the functionality of <span class="xref">System.Diagnostics.Contracts</span></p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
@@ -79,17 +78,40 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">Contract</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:Microsoft.Services.Core</h6>
               <h6><strong>Assembly</strong>:Microsoft.Services.Core.dll</h6>
               <h5 id="Microsoft_Services_Core_Contract_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static class Contract : object</code></pre>
+                <pre><code class="lang-csharp hljs">public static class Contract</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Contract_AssertArgNotNull_" data-uid="Microsoft.Services.Core.Contract.AssertArgNotNull*"></a>
               <h4 id="Microsoft_Services_Core_Contract_AssertArgNotNull_System_Object_System_String_System_String_System_String_System_Int32_" data-uid="Microsoft.Services.Core.Contract.AssertArgNotNull(System.Object,System.String,System.String,System.String,System.Int32)">AssertArgNotNull(Object, String, String, String, Int32)</h4>
               <div class="markdown level1 summary"><p>Asserts that arg is not null.</p>
 </div>
@@ -110,36 +132,50 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Object</span></td>
-                    <td><span class="parametername">arg</span></td>
+                    <td><em>arg</em></td>
                     <td><p>The arg.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">argname</span></td>
+                    <td><em>argname</em></td>
                     <td><p>The argname.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">memberName</span></td>
+                    <td><em>memberName</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">sourceFilePath</span></td>
+                    <td><em>sourceFilePath</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">sourceLineNumber</span></td>
+                    <td><em>sourceLineNumber</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Contract_AssertArgNotNullOrEmptyOrWhitespace_" data-uid="Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace*"></a>
               <h4 id="Microsoft_Services_Core_Contract_AssertArgNotNullOrEmptyOrWhitespace_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Microsoft.Services.Core.Contract.AssertArgNotNullOrEmptyOrWhitespace(System.String,System.String,System.String,System.String,System.Int32)">AssertArgNotNullOrEmptyOrWhitespace(String, String, String, String, Int32)</h4>
               <div class="markdown level1 summary"><p>Asserts that arg is not null or empty or WhiteSpace.</p>
 </div>
@@ -160,36 +196,55 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">arg</span></td>
+                    <td><em>arg</em></td>
                     <td><p>The arg.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">argname</span></td>
+                    <td><em>argname</em></td>
                     <td><p>The argname.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">memberName</span></td>
+                    <td><em>memberName</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">sourceFilePath</span></td>
+                    <td><em>sourceFilePath</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">sourceLineNumber</span></td>
+                    <td><em>sourceLineNumber</em></td>
                     <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.ArgumentException</span></td>
+                    <td><p>Argument cannot be empty</p>
+</td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Contract_AssertNotNull_" data-uid="Microsoft.Services.Core.Contract.AssertNotNull*"></a>
               <h4 id="Microsoft_Services_Core_Contract_AssertNotNull_System_Object_System_String_System_String_System_String_System_String_System_Int32_" data-uid="Microsoft.Services.Core.Contract.AssertNotNull(System.Object,System.String,System.String,System.String,System.String,System.Int32)">AssertNotNull(Object, String, String, String, String, Int32)</h4>
               <div class="markdown level1 summary"><p>Asserts that arg is not null.</p>
 </div>
@@ -210,41 +265,55 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Object</span></td>
-                    <td><span class="parametername">arg</span></td>
+                    <td><em>arg</em></td>
                     <td><p>The arg.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">name</span></td>
+                    <td><em>name</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">message</span></td>
+                    <td><em>message</em></td>
                     <td><p>The message.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">memberName</span></td>
+                    <td><em>memberName</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">sourceFilePath</span></td>
+                    <td><em>sourceFilePath</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">sourceLineNumber</span></td>
+                    <td><em>sourceLineNumber</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Contract_Requires_" data-uid="Microsoft.Services.Core.Contract.Requires*"></a>
               <h4 id="Microsoft_Services_Core_Contract_Requires__1_System_Boolean_System_String_System_String_System_String_System_Int32_" data-uid="Microsoft.Services.Core.Contract.Requires``1(System.Boolean,System.String,System.String,System.String,System.Int32)">Requires&lt;T&gt;(Boolean, String, String, String, Int32)</h4>
               <div class="markdown level1 summary"><p>Wrapper for the CodeContract Requries method</p>
 </div>
@@ -265,27 +334,27 @@
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Boolean</span></td>
-                    <td><span class="parametername">condition</span></td>
+                    <td><em>condition</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">message</span></td>
+                    <td><em>message</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">memberName</span></td>
+                    <td><em>memberName</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">sourceFilePath</span></td>
+                    <td><em>sourceFilePath</em></td>
                     <td></td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">sourceLineNumber</span></td>
+                    <td><em>sourceLineNumber</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -300,12 +369,12 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="parametername">T</span></td>
+                    <td><em>T</em></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-                        </article>
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -339,5 +408,6 @@
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

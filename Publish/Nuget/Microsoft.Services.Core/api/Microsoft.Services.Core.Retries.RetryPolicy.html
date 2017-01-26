@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RetryPolicy
    ">
-    <meta name="generator" content="docfx 2.11.1.0">
+    <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -33,7 +33,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -79,17 +78,40 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">RetryPolicy</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:Microsoft.Services.Core.Retries</h6>
               <h6><strong>Assembly</strong>:Microsoft.Services.Core.dll</h6>
               <h5 id="Microsoft_Services_Core_Retries_RetryPolicy_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class RetryPolicy : object</code></pre>
+                <pre><code class="lang-csharp hljs">public class RetryPolicy</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy__ctor_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.#ctor*"></a>
               <h4 id="Microsoft_Services_Core_Retries_RetryPolicy__ctor_Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)">RetryPolicy(ITransientErrorDetectionStrategy, RetryStrategy)</h4>
               <div class="markdown level1 summary"><p>Initializes a new instance of the RetryPolicy class with the specified number of retry attempts and parameters 
 defining the progressive delay between retries.</p>
@@ -110,14 +132,14 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html">ITransientErrorDetectionStrategy</a></td>
-                    <td><span class="parametername">errorDetectionStrategy</span></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
+                    <td><em>errorDetectionStrategy</em></td>
                     <td><p>The ITransientErrorDetectionStrategy that is responsible for detecting transient conditions.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html">RetryStrategy</a></td>
-                    <td><span class="parametername">retryStrategy</span></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy">RetryStrategy</a></td>
+                    <td><em>retryStrategy</em></td>
                     <td><p>The RetryStrategy to use for this retry policy.</p>
 </td>
                   </tr>
@@ -127,7 +149,6 @@ defining the progressive delay between retries.</p>
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_ErrorDetectionStrategy_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy*"></a>
               <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ErrorDetectionStrategy" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy">ErrorDetectionStrategy</h4>
               <div class="markdown level1 summary"><p>Gets the instance of the error detection strategy.</p>
 </div>
@@ -146,14 +167,13 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html">ITransientErrorDetectionStrategy</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy">ITransientErrorDetectionStrategy</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_RetryStrategy_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy*"></a>
               <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_RetryStrategy" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy">RetryStrategy</h4>
               <div class="markdown level1 summary"><p>Gets the retry strategy.</p>
 </div>
@@ -172,7 +192,7 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html">RetryStrategy</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.html#Microsoft_Services_Core_Retries_RetryStrategies_RetryStrategy">RetryStrategy</a></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -181,8 +201,7 @@ defining the progressive delay between retries.</p>
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_Execute_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.Execute*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_Execute__1_Func___0__CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(Func{``0},CancellationToken)">Execute&lt;TResult&gt;(Func&lt;TResult&gt;, CancellationToken)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_Execute__1_System_Func___0__System_Threading_CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(System.Func{``0},System.Threading.CancellationToken)">Execute&lt;TResult&gt;(Func&lt;TResult&gt;, CancellationToken)</h4>
               <div class="markdown level1 summary"><p>Repetitively executes the specified action while it satisfies the current retry policy.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -201,14 +220,14 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Func</span>&lt;TResult&gt;</td>
-                    <td><span class="parametername">func</span></td>
-                    <td><p>A delegate that represents the executable action that returns the result of type <span class="typeparamref">TResult</span>.</p>
+                    <td><span class="xref">System.Func</span>&lt;TResult&gt;</td>
+                    <td><em>func</em></td>
+                    <td><p>A delegate that represents the executable action that returns the result of type <em>TResult</em>.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">CancellationToken</span></td>
-                    <td><span class="parametername">cancellationToken</span></td>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
                     <td><p>The cancellation token.</p>
 </td>
                   </tr>
@@ -240,16 +259,30 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="parametername">TResult</span></td>
-                    <td><p>The type of result expected from the executable action.</p>
+                    <td><em>TResult</em></td>
+                    <td>The type of result expected from the executable action.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>func</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAction_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAction_Action_CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(Action,CancellationToken)">ExecuteAction(Action, CancellationToken)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAction_System_Action_System_Threading_CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(System.Action,System.Threading.CancellationToken)">ExecuteAction(Action, CancellationToken)</h4>
               <div class="markdown level1 summary"><p>Repetitively executes the specified action while it satisfies the current retry policy.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -268,23 +301,38 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Action</span></td>
-                    <td><span class="parametername">action</span></td>
+                    <td><span class="xref">System.Action</span></td>
+                    <td><em>action</em></td>
                     <td><p>A delegate that represents the executable action that doesn&#39;t return any results.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">CancellationToken</span></td>
-                    <td><span class="parametername">cancellationToken</span></td>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
                     <td><p>The cancellation token.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>action - The action cannot be null.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_Func_Task__CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Func{Task},CancellationToken)">ExecuteAsync(Func&lt;Task&gt;, CancellationToken)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)">ExecuteAsync(Func&lt;Task&gt;, CancellationToken)</h4>
               <div class="markdown level1 summary"><p>Repetitively executes the specified asynchronous task while it satisfies the current retry policy.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -303,14 +351,14 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
-                    <td><span class="parametername">taskAction</span></td>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
+                    <td><em>taskAction</em></td>
                     <td><p>A function that returns a started task (also known as &quot;hot&quot; task).</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">CancellationToken</span></td>
-                    <td><span class="parametername">cancellationToken</span></td>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
                     <td><p>The cancellation token.</p>
 </td>
                   </tr>
@@ -326,7 +374,7 @@ defining the progressive delay between retries.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Task</span></td>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
                     <td><p>A task that will run to completion if the original task completes successfully (either the
 first time or after retrying transient failures). If the task fails with a non-transient error or
 the retry limit is reached, the returned task will transition to a faulted state and the exception must be observed.</p>
@@ -334,10 +382,25 @@ the retry limit is reached, the returned task will transition to a faulted state
                   </tr>
                 </tbody>
               </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>taskAction</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync__1_Func_Task___0___CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(Func{Task{``0}},CancellationToken)">ExecuteAsync&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;, CancellationToken)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_ExecuteAsync__1_System_Func_System_Threading_Tasks_Task___0___System_Threading_CancellationToken_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)">ExecuteAsync&lt;TResult&gt;(Func&lt;Task&lt;TResult&gt;&gt;, CancellationToken)</h4>
               <div class="markdown level1 summary"><p>Repeatedly executes the specified asynchronous task while it satisfies the current retry policy.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -356,14 +419,14 @@ the retry limit is reached, the returned task will transition to a faulted state
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
-                    <td><span class="parametername">taskFunc</span></td>
+                    <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;&gt;</td>
+                    <td><em>taskFunc</em></td>
                     <td><p>A function that returns a started task (also known as &quot;hot&quot; task).</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">CancellationToken</span></td>
-                    <td><span class="parametername">cancellationToken</span></td>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
                     <td><p>The cancellation token.</p>
 </td>
                   </tr>
@@ -379,7 +442,7 @@ the retry limit is reached, the returned task will transition to a faulted state
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Task</span>&lt;TResult&gt;</td>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
                     <td><p>Returns a task that will run to completion if the original task completes successfully (either the
 first time or after retrying transient failures). If the task fails with a non-transient error or
 the retry limit is reached, the returned task will transition to a faulted state and the exception must be observed.</p>
@@ -397,16 +460,30 @@ the retry limit is reached, the returned task will transition to a faulted state
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="parametername">TResult</span></td>
-                    <td><p>The type of the result.</p>
+                    <td><em>TResult</em></td>
+                    <td>The type of the result.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentNullException</span></td>
+                    <td><p>taskFunc</p>
 </td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Retries_RetryPolicy_OnRetrying_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_OnRetrying_System_Int32_Exception_TimeSpan_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,Exception,TimeSpan)">OnRetrying(Int32, Exception, TimeSpan)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_RetryPolicy_OnRetrying_System_Int32_System_Exception_System_TimeSpan_" data-uid="Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,System.Exception,System.TimeSpan)">OnRetrying(Int32, Exception, TimeSpan)</h4>
               <div class="markdown level1 summary"><p>Notifies the subscribers whenever a retry condition is encountered.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -426,19 +503,19 @@ the retry limit is reached, the returned task will transition to a faulted state
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">retryCount</span></td>
+                    <td><em>retryCount</em></td>
                     <td><p>The current retry attempt count.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Exception</span></td>
-                    <td><span class="parametername">lastError</span></td>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>lastError</em></td>
                     <td><p>The exception that caused the retry conditions to occur.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">TimeSpan</span></td>
-                    <td><span class="parametername">delay</span></td>
+                    <td><span class="xref">System.TimeSpan</span></td>
+                    <td><em>delay</em></td>
                     <td><p>The delay that indicates how long the current thread will be suspended before the next iteration is invoked.</p>
 </td>
                   </tr>
@@ -466,12 +543,12 @@ the retry limit is reached, the returned task will transition to a faulted state
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="Microsoft.Services.Core.Retries.RetryingEventArgs.html">RetryingEventArgs</a>&gt;</td>
+                    <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Microsoft.Services.Core.Retries.RetryingEventArgs.html#Microsoft_Services_Core_Retries_RetryingEventArgs">RetryingEventArgs</a>&gt;</td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-                        </article>
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -505,5 +582,6 @@ the retry limit is reached, the returned task will transition to a faulted state
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

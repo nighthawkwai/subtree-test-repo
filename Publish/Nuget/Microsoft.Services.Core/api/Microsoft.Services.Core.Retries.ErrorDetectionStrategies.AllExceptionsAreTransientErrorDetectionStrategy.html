@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AllExceptionsAreTransientErrorDetectionStrategy
    ">
-    <meta name="generator" content="docfx 2.11.1.0">
+    <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -33,7 +33,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -79,18 +78,42 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">AllExceptionsAreTransientErrorDetectionStrategy</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:Microsoft.Services.Core.Retries.ErrorDetectionStrategies</h6>
               <h6><strong>Assembly</strong>:Microsoft.Services.Core.dll</h6>
               <h5 id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class AllExceptionsAreTransientErrorDetectionStrategy : object, ITransientErrorDetectionStrategy</code></pre>
+                <pre><code class="lang-csharp hljs">[Serializable]
+public sealed class AllExceptionsAreTransientErrorDetectionStrategy : ITransientErrorDetectionStrategy</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_GetExtendedDetails_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_GetExtendedDetails_Exception_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)">GetExtendedDetails(Exception)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_GetExtendedDetails_System_Exception_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)">GetExtendedDetails(Exception)</h4>
               <div class="markdown level1 summary"><p>Gets the extended details for the exception provided.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -109,8 +132,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Exception</span></td>
-                    <td><span class="parametername">ex</span></td>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>ex</em></td>
                     <td><p>The exception.</p>
 </td>
                   </tr>
@@ -133,11 +156,10 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_GetExtendedDetails_Exception_">ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)</a></div>
+                  <div><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_GetExtendedDetails_System_Exception_">ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)</a></div>
               
               
-              <a id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_IsTransient_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient*"></a>
-              <h4 id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_IsTransient_Exception_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)">IsTransient(Exception)</h4>
+              <h4 id="Microsoft_Services_Core_Retries_ErrorDetectionStrategies_AllExceptionsAreTransientErrorDetectionStrategy_IsTransient_System_Exception_" data-uid="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(System.Exception)">IsTransient(Exception)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -155,8 +177,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Exception</span></td>
-                    <td><span class="parametername">ex</span></td>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>ex</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -177,8 +199,8 @@
                 </tbody>
               </table>
               <h5 class="implements">Implements</h5>
-                  <div><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_IsTransient_Exception_">ITransientErrorDetectionStrategy.IsTransient(Exception)</a></div>
-                        </article>
+                  <div><a class="xref" href="Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.html#Microsoft_Services_Core_Retries_ErrorDetectionStrategies_ITransientErrorDetectionStrategy_IsTransient_System_Exception_">ITransientErrorDetectionStrategy.IsTransient(Exception)</a></div>
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -212,5 +234,6 @@
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

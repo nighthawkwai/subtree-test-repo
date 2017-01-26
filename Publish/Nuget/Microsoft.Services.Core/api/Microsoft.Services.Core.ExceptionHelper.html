@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExceptionHelper
    ">
-    <meta name="generator" content="docfx 2.11.1.0">
+    <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -33,7 +33,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -79,18 +78,41 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">ExceptionHelper</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:Microsoft.Services.Core</h6>
               <h6><strong>Assembly</strong>:Microsoft.Services.Core.dll</h6>
               <h5 id="Microsoft_Services_Core_ExceptionHelper_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static class ExceptionHelper : object</code></pre>
+                <pre><code class="lang-csharp hljs">public static class ExceptionHelper</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               
               
-              <a id="Microsoft_Services_Core_ExceptionHelper_FindFirstExceptionOfType_" data-uid="Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType*"></a>
-              <h4 id="Microsoft_Services_Core_ExceptionHelper_FindFirstExceptionOfType__1_Exception_" data-uid="Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType``1(Exception)">FindFirstExceptionOfType&lt;T&gt;(Exception)</h4>
+              <h4 id="Microsoft_Services_Core_ExceptionHelper_FindFirstExceptionOfType__1_System_Exception_" data-uid="Microsoft.Services.Core.ExceptionHelper.FindFirstExceptionOfType``1(System.Exception)">FindFirstExceptionOfType&lt;T&gt;(Exception)</h4>
               <div class="markdown level1 summary"><p>Finds the first type of the exception of <typeparam name="T"></typeparam> in the exception tree.
 Returns null if not found</p>
 </div>
@@ -110,8 +132,8 @@ Returns null if not found</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Exception</span></td>
-                    <td><span class="parametername">e</span></td>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>e</em></td>
                     <td><p>The e.</p>
 </td>
                   </tr>
@@ -142,17 +164,16 @@ Returns null if not found</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="parametername">T</span></td>
+                    <td><em>T</em></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_ExceptionHelper_GetIndentedExceptionString_" data-uid="Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString*"></a>
-              <h4 id="Microsoft_Services_Core_ExceptionHelper_GetIndentedExceptionString_Exception_System_Int32_System_Boolean_" data-uid="Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString(Exception,System.Int32,System.Boolean)">GetIndentedExceptionString(Exception, Int32, Boolean)</h4>
+              <h4 id="Microsoft_Services_Core_ExceptionHelper_GetIndentedExceptionString_System_Exception_System_Int32_System_Boolean_" data-uid="Microsoft.Services.Core.ExceptionHelper.GetIndentedExceptionString(System.Exception,System.Int32,System.Boolean)">GetIndentedExceptionString(Exception, Int32, Boolean)</h4>
               <div class="markdown level1 summary"><p>Gets a tab indented exception string of the form
-<code>    &quot;An exception has occurred: ...
+<code>    "An exception has occurred: ...
         Stacktrace:
          An Exception has occurred: ... 
             Stacktrace:
@@ -175,20 +196,20 @@ Returns null if not found</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">Exception</span></td>
-                    <td><span class="parametername">e</span></td>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><em>e</em></td>
                     <td><p>The e.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
-                    <td><span class="parametername">tabIndent</span></td>
+                    <td><em>tabIndent</em></td>
                     <td><p>The tab indent.</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.Boolean</span></td>
-                    <td><span class="parametername">traverseExceptionTree</span></td>
+                    <td><em>traverseExceptionTree</em></td>
                     <td><p>if set to <code>true</code> [traverse exception tree].</p>
 </td>
                   </tr>
@@ -209,7 +230,7 @@ Returns null if not found</p>
                   </tr>
                 </tbody>
               </table>
-                        </article>
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -243,5 +264,6 @@ Returns null if not found</p>
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

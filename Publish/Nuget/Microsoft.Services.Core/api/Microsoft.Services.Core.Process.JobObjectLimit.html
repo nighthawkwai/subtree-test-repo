@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class JobObjectLimit
    ">
-    <meta name="generator" content="docfx 2.11.1.0">
+    <meta name="generator" content="docfx 2.4.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -33,7 +33,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
               <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
@@ -79,17 +78,40 @@
                   <div class="level0"><span class="xref">System.Object</span></div>
                   <div class="level1"><span class="xref">JobObjectLimit</span></div>
               </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
               <h6><strong>Namespace</strong>:Microsoft.Services.Core.Process</h6>
               <h6><strong>Assembly</strong>:Microsoft.Services.Core.dll</h6>
               <h5 id="Microsoft_Services_Core_Process_JobObjectLimit_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class JobObjectLimit : object</code></pre>
+                <pre><code class="lang-csharp hljs">public sealed class JobObjectLimit</code></pre>
               </div>
               <h3 id="properties">Properties
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobClose_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobClose" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose">KillAllProcessOnJobClose</h4>
               <div class="markdown level1 summary"><p>Kills all processes in the job object and their descendent processes.</p>
 </div>
@@ -115,7 +137,6 @@
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MaxActiveProcesses_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MaxActiveProcesses" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses">MaxActiveProcesses</h4>
               <div class="markdown level1 summary"><p>The maximum number of active processes in the jobobject. Beyond that process creation will fail.</p>
 <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetMaxActiveProcesses_System_UInt32_">SetMaxActiveProcesses(UInt32)</a>
@@ -142,7 +163,6 @@
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuPercentageLimit_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuPercentageLimit" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit">MaxCpuPercentageLimit</h4>
               <div class="markdown level1 summary"><p>The percentage of CPU allowed to be consumed by all processes in the job.
 The number is percentage * 100. So 10% is 1000 
@@ -173,7 +193,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
 </div>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuRangePercentage_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MaxCpuRangePercentage" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage">MaxCpuRangePercentage</h4>
               <div class="markdown level1 summary"><p>The max percentage of CPU allowed to be consumed by all pricesses in the job.
 The number is percentage * 100. So 10% is 1000 
@@ -204,7 +223,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
 </div>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MaxProcessCommitSize_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MaxProcessCommitSize" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize">MaxProcessCommitSize</h4>
               <div class="markdown level1 summary"><p>The maximum virtual memory available to a process in bytes</p>
 <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessCommitMemory_System_UInt64_">SetProcessCommitMemory(UInt64)</a>
@@ -231,7 +249,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MaxWorkingSet_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MaxWorkingSet" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet">MaxWorkingSet</h4>
               <div class="markdown level1 summary"><p>The maximum workset memory available to a single process in the job in bytes
 Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_System_UInt64_System_UInt64_">SetProcessworkingSetMemory(UInt64, UInt64)</a></p>
@@ -258,7 +275,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MinCpuRangePercentage_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MinCpuRangePercentage" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage">MinCpuRangePercentage</h4>
               <div class="markdown level1 summary"><p>The min percentage of CPU reserved for all process in the job in each scheduling cycle.
 The number is percentage * 100. So 10% is 1000 
@@ -289,7 +305,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
 </div>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_MinWorkingset_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_MinWorkingset" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset">MinWorkingset</h4>
               <div class="markdown level1 summary"><p>The minimum workset memory available to a single process in the job in bytes
 Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_System_UInt64_System_UInt64_">SetProcessworkingSetMemory(UInt64, UInt64)</a></p>
@@ -318,7 +333,6 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
               </h3>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobObjectClose_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_KillAllProcessOnJobObjectClose_System_Boolean_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)">KillAllProcessOnJobObjectClose(Boolean)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
@@ -338,7 +352,7 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
                 <tbody>
                   <tr>
                     <td><span class="xref">System.Boolean</span></td>
-                    <td><span class="parametername">killAll</span></td>
+                    <td><em>killAll</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -353,14 +367,13 @@ Set with <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.ht
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_System_UInt32_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)">SetCpuLimit(UInt32)</h4>
               <div class="markdown level1 summary"><p>Sets the max CPU allowed to be used in percentage * 100 by all processes in job object combined.
 So for 10% you would pass in 1000.
@@ -383,7 +396,7 @@ Pass 0 to unset the value</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.UInt32</span></td>
-                    <td><span class="parametername">maxPercentage</span></td>
+                    <td><em>maxPercentage</em></td>
                     <td><p>max percentage * 100, so for 10%, it is 1000</p>
 </td>
                   </tr>
@@ -399,7 +412,7 @@ Pass 0 to unset the value</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -410,7 +423,6 @@ or <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Mic
 </div>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_SetCpuLimit_System_UInt32_System_UInt32_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)">SetCpuLimit(UInt32, UInt32)</h4>
               <div class="markdown level1 summary"><p>Sets the min reserved and max CPU allowed to be used in percentage * 100 by all processes in job object combined.
 So for 10% you would pass in 1000.
@@ -433,13 +445,13 @@ Pass 0,0 to unset the value.</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.UInt32</span></td>
-                    <td><span class="parametername">minPercentage</span></td>
+                    <td><em>minPercentage</em></td>
                     <td><p>min percentage * 100</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.UInt32</span></td>
-                    <td><span class="parametername">maxPercentage</span></td>
+                    <td><em>maxPercentage</em></td>
                     <td><p>max percentage * 100</p>
 </td>
                   </tr>
@@ -455,7 +467,7 @@ Pass 0,0 to unset the value.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -466,7 +478,6 @@ or <a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Mic
 </div>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_SetMaxActiveProcesses_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_SetMaxActiveProcesses_System_UInt32_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)">SetMaxActiveProcesses(UInt32)</h4>
               <div class="markdown level1 summary"><p>Sets the maximum number of processes allowed in a job object. Process creation will fail after.
 Set 0 to unset the value.</p>
@@ -488,7 +499,7 @@ Set 0 to unset the value.</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.UInt32</span></td>
-                    <td><span class="parametername">maxProcesses</span></td>
+                    <td><em>maxProcesses</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -503,14 +514,13 @@ Set 0 to unset the value.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_SetProcessCommitMemory_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_SetProcessCommitMemory_System_UInt64_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)">SetProcessCommitMemory(UInt64)</h4>
               <div class="markdown level1 summary"><p>Set the maximum virtual memory in bytes allowed to be used per process in the job object</p>
 </div>
@@ -531,7 +541,7 @@ Set 0 to unset the value.</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.UInt64</span></td>
-                    <td><span class="parametername">maxCommitSize</span></td>
+                    <td><em>maxCommitSize</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -546,14 +556,13 @@ Set 0 to unset the value.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               
               
-              <a id="Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory*"></a>
               <h4 id="Microsoft_Services_Core_Process_JobObjectLimit_SetProcessworkingSetMemory_System_UInt64_System_UInt64_" data-uid="Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)">SetProcessworkingSetMemory(UInt64, UInt64)</h4>
               <div class="markdown level1 summary"><p>Sets the working set memory range allowed per process.</p>
 </div>
@@ -574,13 +583,13 @@ Set 0 to unset the value.</p>
                 <tbody>
                   <tr>
                     <td><span class="xref">System.UInt64</span></td>
-                    <td><span class="parametername">minProcessWorkingSet</span></td>
+                    <td><em>minProcessWorkingSet</em></td>
                     <td><p>min working set in bytes</p>
 </td>
                   </tr>
                   <tr>
                     <td><span class="xref">System.UInt64</span></td>
-                    <td><span class="parametername">maxProcessWorkingSet</span></td>
+                    <td><em>maxProcessWorkingSet</em></td>
                     <td><p>max working set in bytes</p>
 </td>
                   </tr>
@@ -596,12 +605,12 @@ Set 0 to unset the value.</p>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html">JobObjectLimit</a></td>
+                    <td><a class="xref" href="Microsoft.Services.Core.Process.JobObjectLimit.html#Microsoft_Services_Core_Process_JobObjectLimit">JobObjectLimit</a></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-                        </article>
+            </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -635,5 +644,6 @@ Set 0 to unset the value.</p>
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
