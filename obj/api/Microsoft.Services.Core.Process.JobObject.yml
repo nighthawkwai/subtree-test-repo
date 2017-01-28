@@ -1,0 +1,760 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Process.JobObject
+  commentId: T:Microsoft.Services.Core.Process.JobObject
+  id: JobObject
+  parent: Microsoft.Services.Core.Process
+  children:
+  - Microsoft.Services.Core.Process.JobObject.#ctor(System.String)
+  - Microsoft.Services.Core.Process.JobObject.AddProcess(Microsoft.Win32.SafeHandles.SafeProcessHandle)
+  - Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  - Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  - Microsoft.Services.Core.Process.JobObject.Dispose
+  - Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  - Microsoft.Services.Core.Process.JobObject.JobObjectName
+  - Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  - Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: JobObject
+  nameWithType: JobObject
+  fullName: Microsoft.Services.Core.Process.JobObject
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: JobObject
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nA class to manage windows job objects in C#. This can be used to sandbox processes or a group of processes.\n"
+  example:
+  - "\nHere is an example that adds the current process to a job object.\nWhen the using block ends the current process will die.\n<pre><code>using (JobObject mgr = new JobObject(\"Foo\"))\n{\n    mgr.SetJobLimits(new JobObjectLimit()\n        .KillAllProcessOnJobObjectClose(true);\n    mgr.AddProcess(Process.GetCurrentProcess());\n}</code></pre>\n"
+  - "\nAn example to limit the memory usage to 40 MB.\n<pre><code>JobObject mgr = new JobObject();\nmgr.SetJobLimits(new JobObjectLimit()\n    .SetProcessCommitMemory(40*1024*1024));\nmgr.AddProcess(Process.GetCurrentProcess());\n\nwhile(true){\n//This infinite loop will not peg the CPU\n}</code></pre>\n"
+  syntax:
+    content: 'public sealed class JobObject : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class JobObject
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Services.Core.Process.JobObject.#ctor(System.String)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: JobObject(String)
+  nameWithType: JobObject.JobObject(String)
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObject(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nCreates a new windows job object. Named job objects can be operated cross process.\n"
+  example: []
+  syntax:
+    content: public JobObject(string jobObjectName = null)
+    content.vb: Public Sub New(jobObjectName As String = Nothing)
+    parameters:
+    - id: jobObjectName
+      type: System.String
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.JobObjectName
+  commentId: P:Microsoft.Services.Core.Process.JobObject.JobObjectName
+  id: JobObjectName
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: JobObjectName
+  nameWithType: JobObject.JobObjectName
+  fullName: Microsoft.Services.Core.Process.JobObject.JobObjectName
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: JobObjectName
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 53
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nName of the job object. Null if it doesn't have a name\n"
+  example: []
+  syntax:
+    content: public string JobObjectName { get; }
+    content.vb: Public ReadOnly Property JobObjectName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  id: SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: SetJobLimits(JobObjectLimit)
+  nameWithType: JobObject.SetJobLimits(JobObjectLimit)
+  fullName: Microsoft.Services.Core.Process.JobObject.SetJobLimits(Microsoft.Services.Core.Process.JobObjectLimit)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetJobLimits
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSets the limit prescribed by <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public void SetJobLimits(JobObjectLimit limit)
+    content.vb: Public Sub SetJobLimits(limit As JobObjectLimit)
+    parameters:
+    - id: limit
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: limit
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  id: TerminateAllProcessesInJob(System.Int32)
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: TerminateAllProcessesInJob(Int32)
+  nameWithType: JobObject.TerminateAllProcessesInJob(Int32)
+  fullName: Microsoft.Services.Core.Process.JobObject.TerminateAllProcessesInJob(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: TerminateAllProcessesInJob
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 76
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nTerminates all processes in the job object with the specified exit code\n"
+  example: []
+  syntax:
+    content: public void TerminateAllProcessesInJob(int exitCode)
+    content.vb: Public Sub TerminateAllProcessesInJob(exitCode As Integer)
+    parameters:
+    - id: exitCode
+      type: System.Int32
+      description: exit code to terminate the processes with
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(Microsoft.Win32.SafeHandles.SafeProcessHandle)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(Microsoft.Win32.SafeHandles.SafeProcessHandle)
+  id: AddProcess(Microsoft.Win32.SafeHandles.SafeProcessHandle)
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: AddProcess(SafeProcessHandle)
+  nameWithType: JobObject.AddProcess(SafeProcessHandle)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(Microsoft.Win32.SafeHandles.SafeProcessHandle)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: AddProcess
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 86
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nAdds the process specified by the process handle to the job object\n"
+  example: []
+  syntax:
+    content: public void AddProcess(SafeProcessHandle processHandle)
+    content.vb: Public Sub AddProcess(processHandle As SafeProcessHandle)
+    parameters:
+    - id: processHandle
+      type: Microsoft.Win32.SafeHandles.SafeProcessHandle
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  id: AddProcess(System.Diagnostics.Process)
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: AddProcess(Process)
+  nameWithType: JobObject.AddProcess(Process)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Diagnostics.Process)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: AddProcess
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nAdds the process to the job object\n"
+  example: []
+  syntax:
+    content: public void AddProcess(Process process)
+    content.vb: Public Sub AddProcess(process As Process)
+    parameters:
+    - id: process
+      type: System.Diagnostics.Process
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  commentId: M:Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  id: AddProcess(System.Int32)
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: AddProcess(Int32)
+  nameWithType: JobObject.AddProcess(Int32)
+  fullName: Microsoft.Services.Core.Process.JobObject.AddProcess(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: AddProcess
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 108
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nAdds the process specified by the processId to the job object\n"
+  example: []
+  syntax:
+    content: public void AddProcess(int processId)
+    content.vb: Public Sub AddProcess(processId As Integer)
+    parameters:
+    - id: processId
+      type: System.Int32
+      description: Process id
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  commentId: M:Microsoft.Services.Core.Process.JobObject.GetCurrentLimit
+  id: GetCurrentLimit
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentLimit()
+  nameWithType: JobObject.GetCurrentLimit()
+  fullName: Microsoft.Services.Core.Process.JobObject.GetCurrentLimit()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetCurrentLimit
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 120
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nGets the limits associated with current job object. This queries the current state of the job object.\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit GetCurrentLimit()
+    content.vb: Public Function GetCurrentLimit As JobObjectLimit
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObject.Dispose
+  commentId: M:Microsoft.Services.Core.Process.JobObject.Dispose
+  id: Dispose
+  parent: Microsoft.Services.Core.Process.JobObject
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: JobObject.Dispose()
+  fullName: Microsoft.Services.Core.Process.JobObject.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Dispose
+    path: Product/source/Microsoft.Services.Core/Process/JobObject.cs
+    startLine: 194
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nDisposes the job object\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Services.Core.Process
+  commentId: N:Microsoft.Services.Core.Process
+  isExternal: false
+  name: Microsoft.Services.Core.Process
+  nameWithType: Microsoft.Services.Core.Process
+  fullName: Microsoft.Services.Core.Process
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Services.Core.Process.JobObjectLimit
+  commentId: T:Microsoft.Services.Core.Process.JobObjectLimit
+  parent: Microsoft.Services.Core.Process
+  isExternal: false
+  name: JobObjectLimit
+  nameWithType: JobObjectLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Win32.SafeHandles.SafeProcessHandle
+  commentId: T:Microsoft.Win32.SafeHandles.SafeProcessHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: true
+  name: SafeProcessHandle
+  nameWithType: SafeProcessHandle
+  fullName: Microsoft.Win32.SafeHandles.SafeProcessHandle
+- uid: Microsoft.Win32.SafeHandles
+  commentId: N:Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: Microsoft.Win32.SafeHandles
+  nameWithType: Microsoft.Win32.SafeHandles
+  fullName: Microsoft.Win32.SafeHandles
+- uid: System.Diagnostics.Process
+  commentId: T:System.Diagnostics.Process
+  parent: System.Diagnostics
+  isExternal: true
+  name: Process
+  nameWithType: Process
+  fullName: System.Diagnostics.Process
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: false
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

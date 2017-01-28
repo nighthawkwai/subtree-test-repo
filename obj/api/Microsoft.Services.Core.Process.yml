@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Process
+  commentId: N:Microsoft.Services.Core.Process
+  id: Microsoft.Services.Core.Process
+  children:
+  - Microsoft.Services.Core.Process.JobObject
+  - Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core.Process
+  nameWithType: Microsoft.Services.Core.Process
+  fullName: Microsoft.Services.Core.Process
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.Process.JobObject
+  commentId: T:Microsoft.Services.Core.Process.JobObject
+  isExternal: false
+  name: JobObject
+  nameWithType: JobObject
+  fullName: Microsoft.Services.Core.Process.JobObject
+- uid: Microsoft.Services.Core.Process.JobObjectLimit
+  commentId: T:Microsoft.Services.Core.Process.JobObjectLimit
+  parent: Microsoft.Services.Core.Process
+  isExternal: false
+  name: JobObjectLimit
+  nameWithType: JobObjectLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit
+- uid: Microsoft.Services.Core.Process
+  commentId: N:Microsoft.Services.Core.Process
+  isExternal: false
+  name: Microsoft.Services.Core.Process
+  nameWithType: Microsoft.Services.Core.Process
+  fullName: Microsoft.Services.Core.Process

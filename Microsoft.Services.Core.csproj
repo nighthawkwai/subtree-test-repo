@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4C478C55-B5DC-4EAF-979F-CE03393FA1B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.Services.Core</RootNamespace>
+    <AssemblyName>Microsoft.Services.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <Import Project="..\build.props" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(NugetPack)\docfx.msbuild.2.4.0\build\docfx.msbuild.targets" Condition="Exists('$(NugetPath_docfx_msbuild)\build\docfx.msbuild.targets')" />
+  <Import Project="$(NugetPath_Microsoft_Services_DocFx_Msbuild)\build\Microsoft.Services.DocFx.Msbuild.targets" Condition="Exists('$(NugetPath_Microsoft_Services_DocFx_Msbuild)\build\Microsoft.Services.DocFx.Msbuild.targets')" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(NugetPath_Microsoft_Services_Docfx_CSharp_Msbuild_Cbt)\build\Microsoft.Services.Docfx.CSharp.Msbuild.Cbt.targets" Condition="Exists('$(NugetPath_Microsoft_Services_Docfx_CSharp_Msbuild_Cbt)\build\Microsoft.Services.Docfx.CSharp.Msbuild.Cbt.targets')" />
+  <ItemGroup>
+    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="Process\JobObject+NativeMethods.cs" />
+    <Compile Include="Process\JobObject+SafeHandle.cs" />
+    <Compile Include="Process\JobObject.cs" />
+    <Compile Include="Process\JobObjectLimit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Collections\ConcurrentHashSet.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="Retries\ErrorDetectionStrategies\AllExceptionsAreTransientErrorDetectionStrategy.cs" />
+    <Compile Include="Retries\ErrorDetectionStrategies\ITransientErrorDetectionStrategy.cs" />
+    <Compile Include="Retries\RetryingEventArgs.cs" />
+    <Compile Include="Retries\RetryPolicy.cs" />
+    <Compile Include="Retries\RetryStrategies\ExponentialBackoff.cs" />
+    <Compile Include="Retries\RetryStrategies\RetryStrategy.cs" />
+    <Compile Include="Retries\ShouldRetry.cs" />
+    <Compile Include="StringValueAttribute.cs" />
+    <Compile Include="StringValueAttributeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="api\index.md" />
+    <None Include="articles\intro.md" />
+    <None Include="articles\processmanagement-readme.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="articles\Retries-ReadMe.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="articles\toc.md" />
+    <None Include="docfx.json" />
+    <None Include="index.md" />
+    <None Include="Microsoft.Services.Core.nuspec" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Install.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="toc.yml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <LogFile>$(OutDir)\Docs</LogFile>
+  </PropertyGroup>
+  
+    <Target Name="DocPublish" Inputs="$(LogFile)" Outputs="$(TempDirectory)" DependsOnTargets="$(BuildDependsOn)">
+        <PropertyGroup>
+            <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">%WINDIR%\System32\WindowsPowerShell\v1.0\powershell.exe</PowerShellExe>
+            <ScriptLocation Condition=" '$(ScriptLocation)'=='' ">$(PublishPowershellScriptPath)</ScriptLocation>
+        </PropertyGroup>
+        <Message Text="Executing script: '$(PublishPowershellScriptPath)' with parameters '$(AssemblyName)', '$(RAssemblyVersion)', '$(DocsPath)', '$(TempDirectory)'" />
+        <Exec Command="$(PowerShellExe) -NonInteractive -executionpolicy Unrestricted -command &quot;&amp; { $(ScriptLocation) $(AssemblyName) $(RAssemblyVersion) $(DocsPath) $(TempDirectory)} &quot;" />
+    </Target>
+</Project>

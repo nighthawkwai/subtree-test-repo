@@ -1,0 +1,3628 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  commentId: T:Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  id: ConcurrentHashSet`1
+  parent: Microsoft.Services.Core.Collections
+  children:
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add(`0)
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains(`0)
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo(`0[],System.Int32)
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove(`0)
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#IEnumerable#GetEnumerator
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  langs:
+  - csharp
+  - vb
+  name: ConcurrentHashSet<T>
+  nameWithType: ConcurrentHashSet<T>
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ConcurrentHashSet
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 12
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  summary: "\nAn implementation of a ConcurrentHashset\n"
+  example: []
+  syntax:
+    content: 'public class ConcurrentHashSet<T> : ISet<T>, ICollection<T>, IEnumerable<T>, IEnumerable'
+    content.vb: >-
+      Public Class ConcurrentHashSet(Of T)
+          Implements ISet(Of T), ICollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+      description: ''
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.ISet{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  nameWithType.vb: ConcurrentHashSet(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T)
+  name.vb: ConcurrentHashSet(Of T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Comparer
+  id: Comparer
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Comparer
+  nameWithType: ConcurrentHashSet<T>.Comparer
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Comparer
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Comparer
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 16
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public IEqualityComparer<T> Comparer { get; }
+    content.vb: Public ReadOnly Property Comparer As IEqualityComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+  nameWithType.vb: ConcurrentHashSet(Of T).Comparer
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Comparer
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor
+  id: '#ctor'
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: ConcurrentHashSet()
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet()
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet()
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 18
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public ConcurrentHashSet()
+    content.vb: Public Sub New
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEqualityComparer{`0})
+  id: '#ctor(System.Collections.Generic.IEqualityComparer{`0})'
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: ConcurrentHashSet(IEqualityComparer<T>)
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet(IEqualityComparer<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet(System.Collections.Generic.IEqualityComparer<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Services.Core.Collections.ConcurrentHashSet%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ConcurrentHashSet(IEqualityComparer<T> equalityComparer)
+    content.vb: Public Sub New(equalityComparer As IEqualityComparer(Of T))
+    parameters:
+    - id: equalityComparer
+      type: System.Collections.Generic.IEqualityComparer{{T}}
+      description: The equality comparer.
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet(IEqualityComparer(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet(System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: ConcurrentHashSet(IEqualityComparer(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+  id: '#ctor(System.Collections.Generic.IEnumerable{`0})'
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: ConcurrentHashSet(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.ConcurrentHashSet(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ConcurrentHashSet(System.Collections.Generic.IEnumerable<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public ConcurrentHashSet(IEnumerable<T> elements)
+    content.vb: Public Sub New(elements As IEnumerable(Of T))
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{T}}
+  nameWithType.vb: ConcurrentHashSet(Of T).ConcurrentHashSet(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ConcurrentHashSet(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ConcurrentHashSet(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: ConcurrentHashSet<T>.GetEnumerator()
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetEnumerator
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator(Of T)
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  nameWithType.vb: ConcurrentHashSet(Of T).GetEnumerator()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).GetEnumerator()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: ConcurrentHashSet<T>.IEnumerable.GetEnumerator()
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 49
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: ConcurrentHashSet(Of T).System.Collections.IEnumerable.GetEnumerator()
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  id: UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: UnionWith(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.UnionWith(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: UnionWith
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void UnionWith(IEnumerable<T> other)
+    content.vb: Public Sub UnionWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+  implements:
+  - System.Collections.Generic.ISet{{T}}.UnionWith(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).UnionWith(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: UnionWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  id: IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IntersectWith(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.IntersectWith(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IntersectWith
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void IntersectWith(IEnumerable<T> other)
+    content.vb: Public Sub IntersectWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+  implements:
+  - System.Collections.Generic.ISet{{T}}.IntersectWith(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).IntersectWith(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IntersectWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: ExceptWith(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.ExceptWith(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ExceptWith
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 109
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void ExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub ExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+  implements:
+  - System.Collections.Generic.ISet{{T}}.ExceptWith(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).ExceptWith(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ExceptWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  id: SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: SymmetricExceptWith(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.SymmetricExceptWith(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SymmetricExceptWith
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 128
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void SymmetricExceptWith(IEnumerable<T> other)
+    content.vb: Public Sub SymmetricExceptWith(other As IEnumerable(Of T))
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+  implements:
+  - System.Collections.Generic.ISet{{T}}.SymmetricExceptWith(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).SymmetricExceptWith(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IsSubsetOf(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.IsSubsetOf(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsSubsetOf
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool IsSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.IsSubsetOf(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSubsetOf(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IsSupersetOf(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.IsSupersetOf(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsSupersetOf
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 203
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool IsSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.IsSupersetOf(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).IsSupersetOf(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IsProperSupersetOf(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.IsProperSupersetOf(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsProperSupersetOf
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 219
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool IsProperSupersetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.IsProperSupersetOf(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSupersetOf(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  id: IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IsProperSubsetOf(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.IsProperSubsetOf(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsProperSubsetOf
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 251
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool IsProperSubsetOf(IEnumerable<T> other)
+    content.vb: Public Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.IsProperSubsetOf(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).IsProperSubsetOf(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  id: Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Overlaps(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.Overlaps(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Overlaps
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 282
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool Overlaps(IEnumerable<T> other)
+    content.vb: Public Function Overlaps(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.Overlaps(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).Overlaps(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Overlaps(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  id: SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: SetEquals(IEnumerable<T>)
+  nameWithType: ConcurrentHashSet<T>.SetEquals(IEnumerable<T>)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetEquals
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 294
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool SetEquals(IEnumerable<T> other)
+    content.vb: Public Function SetEquals(other As IEnumerable(Of T)) As Boolean
+    parameters:
+    - id: other
+      type: System.Collections.Generic.IEnumerable{{T}}
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.SetEquals(System.Collections.Generic.IEnumerable{{T}})
+  nameWithType.vb: ConcurrentHashSet(Of T).SetEquals(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SetEquals(IEnumerable(Of T))
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add(`0)
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Add(`0)
+  id: Add(`0)
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Add(T)
+  nameWithType: ConcurrentHashSet<T>.Add(T)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Add
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 301
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool Add(T item)
+    content.vb: Public Function Add(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ISet{{T}}.Add({T})
+  nameWithType.vb: ConcurrentHashSet(Of T).Add(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Add(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  isEii: true
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: ICollection<T>.Add(T)
+  nameWithType: ConcurrentHashSet<T>.ICollection<T>.Add(T)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: System.Collections.Generic.ICollection<T>.Add
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 306
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  nameWithType.vb: ConcurrentHashSet(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Clear
+  id: Clear
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: ConcurrentHashSet<T>.Clear()
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Clear
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 312
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  nameWithType.vb: ConcurrentHashSet(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Clear()
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains(`0)
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Contains(`0)
+  id: Contains(`0)
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: ConcurrentHashSet<T>.Contains(T)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Contains
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 317
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool Contains(T item)
+    content.vb: Public Function Contains(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  nameWithType.vb: ConcurrentHashSet(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Contains(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo(`0[],System.Int32)
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.CopyTo(`0[],System.Int32)
+  id: CopyTo(`0[],System.Int32)
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(T[], Int32)
+  nameWithType: ConcurrentHashSet<T>.CopyTo(T[], Int32)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: CopyTo
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 322
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public void CopyTo(T[] array, int arrayIndex)
+    content.vb: Public Sub CopyTo(array As T(), arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+    - id: arrayIndex
+      type: System.Int32
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  nameWithType.vb: ConcurrentHashSet(Of T).CopyTo(T(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove(`0)
+  commentId: M:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Remove(`0)
+  id: Remove(`0)
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: ConcurrentHashSet<T>.Remove(T)
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Remove
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 328
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool Remove(T item)
+    content.vb: Public Function Remove(item As T) As Boolean
+    parameters:
+    - id: item
+      type: '{T}'
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  nameWithType.vb: ConcurrentHashSet(Of T).Remove(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Remove(T)
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.Count
+  id: Count
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ConcurrentHashSet<T>.Count
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.Count
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Count
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 334
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  nameWithType.vb: ConcurrentHashSet(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).Count
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  commentId: P:Microsoft.Services.Core.Collections.ConcurrentHashSet`1.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: ConcurrentHashSet<T>.IsReadOnly
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsReadOnly
+    path: Product/source/Microsoft.Services.Core/Collections/ConcurrentHashSet.cs
+    startLine: 336
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Collections
+  syntax:
+    content: public bool IsReadOnly { get; }
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  nameWithType.vb: ConcurrentHashSet(Of T).IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T).IsReadOnly
+references:
+- uid: Microsoft.Services.Core.Collections
+  commentId: N:Microsoft.Services.Core.Collections
+  isExternal: false
+  name: Microsoft.Services.Core.Collections
+  nameWithType: Microsoft.Services.Core.Collections
+  fullName: Microsoft.Services.Core.Collections
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Collections.Generic.ISet{{T}}
+  commentId: T:System.Collections.Generic.ISet{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullname.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullname.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    nameWithType: ISet
+    fullName: System.Collections.Generic.ISet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  commentId: T:System.Collections.Generic.IEqualityComparer{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    nameWithType: IEqualityComparer
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  commentId: T:Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  isExternal: false
+  name: ConcurrentHashSet<T>
+  nameWithType: ConcurrentHashSet<T>
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>
+  nameWithType.vb: ConcurrentHashSet(Of T)
+  fullname.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T)
+  name.vb: ConcurrentHashSet(Of T)
+  spec.csharp:
+  - uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+    name: ConcurrentHashSet
+    nameWithType: ConcurrentHashSet
+    fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+    name: ConcurrentHashSet
+    nameWithType: ConcurrentHashSet
+    fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections.Generic.ISet{{T}}.UnionWith(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  name: UnionWith(IEnumerable<T>)
+  nameWithType: ISet<T>.UnionWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).UnionWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: UnionWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+    name: UnionWith
+    nameWithType: ISet<T>.UnionWith
+    fullName: System.Collections.Generic.ISet<T>.UnionWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+    name: UnionWith
+    nameWithType: ISet(Of T).UnionWith
+    fullName: System.Collections.Generic.ISet(Of T).UnionWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: UnionWith(IEnumerable<T>)
+  nameWithType: ISet<T>.UnionWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).UnionWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: UnionWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+    name: UnionWith
+    nameWithType: ISet<T>.UnionWith
+    fullName: System.Collections.Generic.ISet<T>.UnionWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})
+    name: UnionWith
+    nameWithType: ISet(Of T).UnionWith
+    fullName: System.Collections.Generic.ISet(Of T).UnionWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.IntersectWith(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  name: IntersectWith(IEnumerable<T>)
+  nameWithType: ISet<T>.IntersectWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IntersectWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IntersectWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+    name: IntersectWith
+    nameWithType: ISet<T>.IntersectWith
+    fullName: System.Collections.Generic.ISet<T>.IntersectWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+    name: IntersectWith
+    nameWithType: ISet(Of T).IntersectWith
+    fullName: System.Collections.Generic.ISet(Of T).IntersectWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: IntersectWith(IEnumerable<T>)
+  nameWithType: ISet<T>.IntersectWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IntersectWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IntersectWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+    name: IntersectWith
+    nameWithType: ISet<T>.IntersectWith
+    fullName: System.Collections.Generic.ISet<T>.IntersectWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})
+    name: IntersectWith
+    nameWithType: ISet(Of T).IntersectWith
+    fullName: System.Collections.Generic.ISet(Of T).IntersectWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.ExceptWith(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  name: ExceptWith(IEnumerable<T>)
+  nameWithType: ISet<T>.ExceptWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).ExceptWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ExceptWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: ExceptWith
+    nameWithType: ISet<T>.ExceptWith
+    fullName: System.Collections.Generic.ISet<T>.ExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: ExceptWith
+    nameWithType: ISet(Of T).ExceptWith
+    fullName: System.Collections.Generic.ISet(Of T).ExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: ExceptWith(IEnumerable<T>)
+  nameWithType: ISet<T>.ExceptWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).ExceptWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ExceptWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: ExceptWith
+    nameWithType: ISet<T>.ExceptWith
+    fullName: System.Collections.Generic.ISet<T>.ExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: ExceptWith
+    nameWithType: ISet(Of T).ExceptWith
+    fullName: System.Collections.Generic.ISet(Of T).ExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.SymmetricExceptWith(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  name: SymmetricExceptWith(IEnumerable<T>)
+  nameWithType: ISet<T>.SymmetricExceptWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).SymmetricExceptWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: SymmetricExceptWith
+    nameWithType: ISet<T>.SymmetricExceptWith
+    fullName: System.Collections.Generic.ISet<T>.SymmetricExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: SymmetricExceptWith
+    nameWithType: ISet(Of T).SymmetricExceptWith
+    fullName: System.Collections.Generic.ISet(Of T).SymmetricExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: SymmetricExceptWith(IEnumerable<T>)
+  nameWithType: ISet<T>.SymmetricExceptWith(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).SymmetricExceptWith(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SymmetricExceptWith(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: SymmetricExceptWith
+    nameWithType: ISet<T>.SymmetricExceptWith
+    fullName: System.Collections.Generic.ISet<T>.SymmetricExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})
+    name: SymmetricExceptWith
+    nameWithType: ISet(Of T).SymmetricExceptWith
+    fullName: System.Collections.Generic.ISet(Of T).SymmetricExceptWith
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.IsSubsetOf(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  name: IsSubsetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsSubsetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsSubsetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSubsetOf
+    nameWithType: ISet<T>.IsSubsetOf
+    fullName: System.Collections.Generic.ISet<T>.IsSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSubsetOf
+    nameWithType: ISet(Of T).IsSubsetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: IsSubsetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsSubsetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsSubsetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSubsetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSubsetOf
+    nameWithType: ISet<T>.IsSubsetOf
+    fullName: System.Collections.Generic.ISet<T>.IsSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSubsetOf
+    nameWithType: ISet(Of T).IsSubsetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.IsSupersetOf(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  name: IsSupersetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsSupersetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsSupersetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSupersetOf
+    nameWithType: ISet<T>.IsSupersetOf
+    fullName: System.Collections.Generic.ISet<T>.IsSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSupersetOf
+    nameWithType: ISet(Of T).IsSupersetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: IsSupersetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsSupersetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsSupersetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsSupersetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSupersetOf
+    nameWithType: ISet<T>.IsSupersetOf
+    fullName: System.Collections.Generic.ISet<T>.IsSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsSupersetOf
+    nameWithType: ISet(Of T).IsSupersetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.IsProperSupersetOf(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  name: IsProperSupersetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsProperSupersetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsProperSupersetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSupersetOf
+    nameWithType: ISet<T>.IsProperSupersetOf
+    fullName: System.Collections.Generic.ISet<T>.IsProperSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSupersetOf
+    nameWithType: ISet(Of T).IsProperSupersetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsProperSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: IsProperSupersetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsProperSupersetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsProperSupersetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSupersetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSupersetOf
+    nameWithType: ISet<T>.IsProperSupersetOf
+    fullName: System.Collections.Generic.ISet<T>.IsProperSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSupersetOf
+    nameWithType: ISet(Of T).IsProperSupersetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsProperSupersetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.IsProperSubsetOf(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  name: IsProperSubsetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsProperSubsetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsProperSubsetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSubsetOf
+    nameWithType: ISet<T>.IsProperSubsetOf
+    fullName: System.Collections.Generic.ISet<T>.IsProperSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSubsetOf
+    nameWithType: ISet(Of T).IsProperSubsetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsProperSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: IsProperSubsetOf(IEnumerable<T>)
+  nameWithType: ISet<T>.IsProperSubsetOf(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).IsProperSubsetOf(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsProperSubsetOf(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSubsetOf
+    nameWithType: ISet<T>.IsProperSubsetOf
+    fullName: System.Collections.Generic.ISet<T>.IsProperSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})
+    name: IsProperSubsetOf
+    nameWithType: ISet(Of T).IsProperSubsetOf
+    fullName: System.Collections.Generic.ISet(Of T).IsProperSubsetOf
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.Overlaps(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  name: Overlaps(IEnumerable<T>)
+  nameWithType: ISet<T>.Overlaps(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).Overlaps(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Overlaps(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+    name: Overlaps
+    nameWithType: ISet<T>.Overlaps
+    fullName: System.Collections.Generic.ISet<T>.Overlaps
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+    name: Overlaps
+    nameWithType: ISet(Of T).Overlaps
+    fullName: System.Collections.Generic.ISet(Of T).Overlaps
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: Overlaps(IEnumerable<T>)
+  nameWithType: ISet<T>.Overlaps(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).Overlaps(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Overlaps(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+    name: Overlaps
+    nameWithType: ISet<T>.Overlaps
+    fullName: System.Collections.Generic.ISet<T>.Overlaps
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})
+    name: Overlaps
+    nameWithType: ISet(Of T).Overlaps
+    fullName: System.Collections.Generic.ISet(Of T).Overlaps
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.SetEquals(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:System.Collections.Generic.ISet{`0}.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  name: SetEquals(IEnumerable<T>)
+  nameWithType: ISet<T>.SetEquals(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).SetEquals(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SetEquals(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+    name: SetEquals
+    nameWithType: ISet<T>.SetEquals
+    fullName: System.Collections.Generic.ISet<T>.SetEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+    name: SetEquals
+    nameWithType: ISet(Of T).SetEquals
+    fullName: System.Collections.Generic.ISet(Of T).SetEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  name: SetEquals(IEnumerable<T>)
+  nameWithType: ISet<T>.SetEquals(IEnumerable<T>)
+  fullName: System.Collections.Generic.ISet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: ISet(Of T).SetEquals(IEnumerable(Of T))
+  fullname.vb: System.Collections.Generic.ISet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SetEquals(IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+    name: SetEquals
+    nameWithType: ISet<T>.SetEquals
+    fullName: System.Collections.Generic.ISet<T>.SetEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})
+    name: SetEquals
+    nameWithType: ISet(Of T).SetEquals
+    fullName: System.Collections.Generic.ISet(Of T).SetEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ISet{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ISet{`0}.Add(`0)
+  parent: System.Collections.Generic.ISet{{T}}
+  definition: System.Collections.Generic.ISet`1.Add(`0)
+  name: Add(T)
+  nameWithType: ISet<T>.Add(T)
+  fullName: System.Collections.Generic.ISet<T>.Add(T)
+  nameWithType.vb: ISet(Of T).Add(T)
+  fullname.vb: System.Collections.Generic.ISet(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.Add(`0)
+    name: Add
+    nameWithType: ISet<T>.Add
+    fullName: System.Collections.Generic.ISet<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.Add(`0)
+    name: Add
+    nameWithType: ISet(Of T).Add
+    fullName: System.Collections.Generic.ISet(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.ISet`1.Add(`0)
+  commentId: M:System.Collections.Generic.ISet`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ISet<T>.Add(T)
+  fullName: System.Collections.Generic.ISet<T>.Add(T)
+  nameWithType.vb: ISet(Of T).Add(T)
+  fullname.vb: System.Collections.Generic.ISet(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1.Add(`0)
+    name: Add
+    nameWithType: ISet<T>.Add
+    fullName: System.Collections.Generic.ISet<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1.Add(`0)
+    name: Add
+    nameWithType: ISet(Of T).Add
+    fullName: System.Collections.Generic.ISet(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}[]'
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullname.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly

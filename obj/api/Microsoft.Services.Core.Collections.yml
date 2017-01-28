@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Collections
+  commentId: N:Microsoft.Services.Core.Collections
+  id: Microsoft.Services.Core.Collections
+  children:
+  - Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core.Collections
+  nameWithType: Microsoft.Services.Core.Collections
+  fullName: Microsoft.Services.Core.Collections
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  commentId: T:Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+  isExternal: false
+  name: ConcurrentHashSet<T>
+  nameWithType: ConcurrentHashSet<T>
+  fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet<T>
+  nameWithType.vb: ConcurrentHashSet(Of T)
+  fullname.vb: Microsoft.Services.Core.Collections.ConcurrentHashSet(Of T)
+  name.vb: ConcurrentHashSet(Of T)
+  spec.csharp:
+  - uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+    name: ConcurrentHashSet
+    nameWithType: ConcurrentHashSet
+    fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+    name: ConcurrentHashSet
+    nameWithType: ConcurrentHashSet
+    fullName: Microsoft.Services.Core.Collections.ConcurrentHashSet
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

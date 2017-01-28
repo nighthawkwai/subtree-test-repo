@@ -1,0 +1,544 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  id: AllExceptionsAreTransientErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  children:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: AllExceptionsAreTransientErrorDetectionStrategy
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: AllExceptionsAreTransientErrorDetectionStrategy
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  summary: "\nAlways returns true for every Exception.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public sealed class AllExceptionsAreTransientErrorDetectionStrategy : ITransientErrorDetectionStrategy
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class AllExceptionsAreTransientErrorDetectionStrategy
+          Implements ITransientErrorDetectionStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(System.Exception)
+  id: IsTransient(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  langs:
+  - csharp
+  - vb
+  name: IsTransient(Exception)
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.IsTransient(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsTransient
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+    startLine: 10
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  syntax:
+    content: public bool IsTransient(Exception ex)
+    content.vb: Public Function IsTransient(ex As Exception) As Boolean
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: System.Boolean
+  implements:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  id: GetExtendedDetails(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedDetails(Exception)
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetExtendedDetails
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/AllExceptionsAreTransientErrorDetectionStrategy.cs
+    startLine: 20
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  summary: "\nGets the extended details for the exception provided.\n"
+  example: []
+  syntax:
+    content: public string GetExtendedDetails(Exception ex)
+    content.vb: Public Function GetExtendedDetails(ex As Exception) As String
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception.
+    return:
+      type: System.String
+      description: The extended details for the exception provided.
+  implements:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: ITransientErrorDetectionStrategy
+  nameWithType: ITransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  isExternal: true
+  name: IsTransient(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.IsTransient(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+    name: IsTransient
+    nameWithType: ITransientErrorDetectionStrategy.IsTransient
+    fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+    name: IsTransient
+    nameWithType: ITransientErrorDetectionStrategy.IsTransient
+    fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  isExternal: true
+  name: GetExtendedDetails(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  spec.csharp:
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+    name: GetExtendedDetails
+    nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails
+    fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+    name: GetExtendedDetails
+    nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails
+    fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

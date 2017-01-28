@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  id: ITransientErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  children:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  langs:
+  - csharp
+  - vb
+  name: ITransientErrorDetectionStrategy
+  nameWithType: ITransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  type: Interface
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ITransientErrorDetectionStrategy
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  summary: "\nDefines an interface which must be implemented by custom components responsible for detecting specific transient conditions.\n"
+  example: []
+  syntax:
+    content: public interface ITransientErrorDetectionStrategy
+    content.vb: Public Interface ITransientErrorDetectionStrategy
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  id: IsTransient(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  langs:
+  - csharp
+  - vb
+  name: IsTransient(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.IsTransient(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.IsTransient(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: IsTransient
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+    startLine: 14
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  summary: "\nDetermines whether the specified exception represents a transient failure that can be compensated by a retry.\n"
+  example: []
+  syntax:
+    content: bool IsTransient(Exception ex)
+    content.vb: Function IsTransient(ex As Exception) As Boolean
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception object to be verified.
+    return:
+      type: System.Boolean
+      description: True if the specified exception is considered as transient, otherwise false.
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  id: GetExtendedDetails(System.Exception)
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetExtendedDetails(Exception)
+  nameWithType: ITransientErrorDetectionStrategy.GetExtendedDetails(Exception)
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy.GetExtendedDetails(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetExtendedDetails
+    path: Product/source/Microsoft.Services.Core/Retries/ErrorDetectionStrategies/ITransientErrorDetectionStrategy.cs
+    startLine: 21
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  summary: "\nGets the extended details for the exception provided.\n"
+  example: []
+  syntax:
+    content: string GetExtendedDetails(Exception ex)
+    content.vb: Function GetExtendedDetails(ex As Exception) As String
+    parameters:
+    - id: ex
+      type: System.Exception
+      description: The exception.
+    return:
+      type: System.String
+      description: The extended details for the exception provided.
+references:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

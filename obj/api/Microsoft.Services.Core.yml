@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core
+  commentId: N:Microsoft.Services.Core
+  id: Microsoft.Services.Core
+  children:
+  - Microsoft.Services.Core.Contract
+  - Microsoft.Services.Core.ExceptionHelper
+  - Microsoft.Services.Core.StringValueAttribute
+  - Microsoft.Services.Core.StringValueAttributeExtensions
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core
+  nameWithType: Microsoft.Services.Core
+  fullName: Microsoft.Services.Core
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.ExceptionHelper
+  commentId: T:Microsoft.Services.Core.ExceptionHelper
+  isExternal: false
+  name: ExceptionHelper
+  nameWithType: ExceptionHelper
+  fullName: Microsoft.Services.Core.ExceptionHelper
+- uid: Microsoft.Services.Core.Contract
+  commentId: T:Microsoft.Services.Core.Contract
+  isExternal: false
+  name: Contract
+  nameWithType: Contract
+  fullName: Microsoft.Services.Core.Contract
+- uid: Microsoft.Services.Core.StringValueAttribute
+  commentId: T:Microsoft.Services.Core.StringValueAttribute
+  isExternal: false
+  name: StringValueAttribute
+  nameWithType: StringValueAttribute
+  fullName: Microsoft.Services.Core.StringValueAttribute
+- uid: Microsoft.Services.Core.StringValueAttributeExtensions
+  commentId: T:Microsoft.Services.Core.StringValueAttributeExtensions
+  isExternal: false
+  name: StringValueAttributeExtensions
+  nameWithType: StringValueAttributeExtensions
+  fullName: Microsoft.Services.Core.StringValueAttributeExtensions

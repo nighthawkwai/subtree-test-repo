@@ -1,0 +1,542 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  id: ExponentialBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies
+  children:
+  - Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)
+  - Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  langs:
+  - csharp
+  - vb
+  name: ExponentialBackoff
+  nameWithType: ExponentialBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ExponentialBackoff
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nA retry strategy with backoff parameters for calculating the exponential delay between retries.\n"
+  example: []
+  syntax:
+    content: 'public class ExponentialBackoff : RetryStrategy'
+    content.vb: >-
+      Public Class ExponentialBackoff
+          Inherits RetryStrategy
+  inheritance:
+  - System.Object
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  inheritedMembers:
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.#ctor(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)
+  id: '#ctor(System.Int32,System.TimeSpan,System.TimeSpan,System.TimeSpan)'
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  langs:
+  - csharp
+  - vb
+  name: ExponentialBackoff(Int32, TimeSpan, TimeSpan, TimeSpan)
+  nameWithType: ExponentialBackoff.ExponentialBackoff(Int32, TimeSpan, TimeSpan, TimeSpan)
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.ExponentialBackoff(System.Int32, System.TimeSpan, System.TimeSpan, System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+    startLine: 20
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nInitializes a new instance of the ExponentialBackoff class with the specified name, retry settings, and fast retry option.\n"
+  example: []
+  syntax:
+    content: public ExponentialBackoff(int maxRetryCount, TimeSpan minBackoff, TimeSpan maxBackoff, TimeSpan deltaBackoff)
+    content.vb: Public Sub New(maxRetryCount As Integer, minBackoff As TimeSpan, maxBackoff As TimeSpan, deltaBackoff As TimeSpan)
+    parameters:
+    - id: maxRetryCount
+      type: System.Int32
+      description: The maximum number of retry attempts.
+    - id: minBackoff
+      type: System.TimeSpan
+      description: The minimum backoff time
+    - id: maxBackoff
+      type: System.TimeSpan
+      description: The maximum backoff time.
+    - id: deltaBackoff
+      type: System.TimeSpan
+      description: The value that will be used to calculate a random delta in the exponential delay between retries.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry
+  id: GetShouldRetry
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  langs:
+  - csharp
+  - vb
+  name: GetShouldRetry()
+  nameWithType: ExponentialBackoff.GetShouldRetry()
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff.GetShouldRetry()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetShouldRetry
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/ExponentialBackoff.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nReturns the corresponding ShouldRetry delegate.\n"
+  example: []
+  syntax:
+    content: public override ShouldRetry GetShouldRetry()
+    content.vb: Public Overrides Function GetShouldRetry As ShouldRetry
+    return:
+      type: Microsoft.Services.Core.Retries.ShouldRetry
+      description: "\nThe ShouldRetry delegate.\n"
+  overridden: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  parent: Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: RetryStrategy
+  nameWithType: RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: DefaultClientRetryCount
+  nameWithType: RetryStrategy.DefaultClientRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: DefaultClientBackoff
+  nameWithType: RetryStrategy.DefaultClientBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: DefaultMaxBackoff
+  nameWithType: RetryStrategy.DefaultMaxBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: DefaultMinBackoff
+  nameWithType: RetryStrategy.DefaultMinBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: DefaultRetryInterval
+  nameWithType: RetryStrategy.DefaultRetryInterval
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  commentId: P:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: MaxRetryCount
+  nameWithType: RetryStrategy.MaxRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  isExternal: false
+  name: GetShouldRetry()
+  nameWithType: RetryStrategy.GetShouldRetry()
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry()
+  spec.csharp:
+  - uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+    name: GetShouldRetry
+    nameWithType: RetryStrategy.GetShouldRetry
+    fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+    name: GetShouldRetry
+    nameWithType: RetryStrategy.GetShouldRetry
+    fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Services.Core.Retries.ShouldRetry
+  commentId: T:Microsoft.Services.Core.Retries.ShouldRetry
+  parent: Microsoft.Services.Core.Retries
+  isExternal: false
+  name: ShouldRetry
+  nameWithType: ShouldRetry
+  fullName: Microsoft.Services.Core.Retries.ShouldRetry
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  isExternal: false
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries

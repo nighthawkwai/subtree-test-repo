@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+  commentId: T:Microsoft.Services.Core.Retries.RetryingEventArgs
+  id: RetryingEventArgs
+  parent: Microsoft.Services.Core.Retries
+  children:
+  - Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor(System.Int32,System.TimeSpan,System.Exception)
+  - Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  - Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  - Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  - Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  langs:
+  - csharp
+  - vb
+  name: RetryingEventArgs
+  nameWithType: RetryingEventArgs
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: RetryingEventArgs
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nContains information that is required for the Retrying delegate.\n"
+  example: []
+  syntax:
+    content: 'public class RetryingEventArgs : EventArgs'
+    content.vb: >-
+      Public Class RetryingEventArgs
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  id: CurrentRetryCount
+  parent: Microsoft.Services.Core.Retries.RetryingEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CurrentRetryCount
+  nameWithType: RetryingEventArgs.CurrentRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CurrentRetryCount
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: CurrentRetryCount
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 12
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the current retry count.\n"
+  example: []
+  syntax:
+    content: public int CurrentRetryCount { get; }
+    content.vb: Public ReadOnly Property CurrentRetryCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  id: Delay
+  parent: Microsoft.Services.Core.Retries.RetryingEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Delay
+  nameWithType: RetryingEventArgs.Delay
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.Delay
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Delay
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 17
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the delay that indicates how long the current thread will be suspended before the next iteration is invoked.\n"
+  example: []
+  syntax:
+    content: public TimeSpan Delay { get; }
+    content.vb: Public ReadOnly Property Delay As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  id: LastException
+  parent: Microsoft.Services.Core.Retries.RetryingEventArgs
+  langs:
+  - csharp
+  - vb
+  name: LastException
+  nameWithType: RetryingEventArgs.LastException
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.LastException
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: LastException
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the exception that caused the retry conditions to occur.\n"
+  example: []
+  syntax:
+    content: public Exception LastException { get; }
+    content.vb: Public ReadOnly Property LastException As Exception
+    parameters: []
+    return:
+      type: System.Exception
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  commentId: P:Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  id: CallingMethod
+  parent: Microsoft.Services.Core.Retries.RetryingEventArgs
+  langs:
+  - csharp
+  - vb
+  name: CallingMethod
+  nameWithType: RetryingEventArgs.CallingMethod
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.CallingMethod
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: CallingMethod
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the name of the function being executed.\n"
+  example: []
+  syntax:
+    content: public string CallingMethod { get; }
+    content.vb: Public ReadOnly Property CallingMethod As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor(System.Int32,System.TimeSpan,System.Exception)
+  commentId: M:Microsoft.Services.Core.Retries.RetryingEventArgs.#ctor(System.Int32,System.TimeSpan,System.Exception)
+  id: '#ctor(System.Int32,System.TimeSpan,System.Exception)'
+  parent: Microsoft.Services.Core.Retries.RetryingEventArgs
+  langs:
+  - csharp
+  - vb
+  name: RetryingEventArgs(Int32, TimeSpan, Exception)
+  nameWithType: RetryingEventArgs.RetryingEventArgs(Int32, TimeSpan, Exception)
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs.RetryingEventArgs(System.Int32, System.TimeSpan, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Retries/RetryingEventArgs.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nInitializes a new instance of the <xref href=\"Hyak.Common.TransientFaultHandling.RetryingEventArgs\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RetryingEventArgs(int currentRetryCount, TimeSpan delay, Exception lastException)
+    content.vb: Public Sub New(currentRetryCount As Integer, delay As TimeSpan, lastException As Exception)
+    parameters:
+    - id: currentRetryCount
+      type: System.Int32
+      description: The current retry attempt count.
+    - id: delay
+      type: System.TimeSpan
+      description: The delay that indicates how long the current thread will be suspended before the next iteration is invoked.
+    - id: lastException
+      type: System.Exception
+      description: The exception that caused the retry conditions to occur.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  isExternal: false
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Hyak.Common.TransientFaultHandling.RetryingEventArgs
+  commentId: T:Hyak.Common.TransientFaultHandling.RetryingEventArgs

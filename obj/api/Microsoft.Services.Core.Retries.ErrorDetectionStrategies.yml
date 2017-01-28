@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  id: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  children:
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  - Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+  isExternal: false
+  name: AllExceptionsAreTransientErrorDetectionStrategy
+  nameWithType: AllExceptionsAreTransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: ITransientErrorDetectionStrategy
+  nameWithType: ITransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies

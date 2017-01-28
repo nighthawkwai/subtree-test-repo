@@ -1,0 +1,48 @@
+### YamlMime:TableOfContent
+- uid: Microsoft.Services.Core
+  name: Microsoft.Services.Core
+  items:
+  - uid: Microsoft.Services.Core.Contract
+    name: Contract
+  - uid: Microsoft.Services.Core.ExceptionHelper
+    name: ExceptionHelper
+  - uid: Microsoft.Services.Core.StringValueAttribute
+    name: StringValueAttribute
+  - uid: Microsoft.Services.Core.StringValueAttributeExtensions
+    name: StringValueAttributeExtensions
+- uid: Microsoft.Services.Core.Collections
+  name: Microsoft.Services.Core.Collections
+  items:
+  - uid: Microsoft.Services.Core.Collections.ConcurrentHashSet`1
+    name: ConcurrentHashSet<T>
+    name.vb: ConcurrentHashSet(Of T)
+- uid: Microsoft.Services.Core.Process
+  name: Microsoft.Services.Core.Process
+  items:
+  - uid: Microsoft.Services.Core.Process.JobObject
+    name: JobObject
+  - uid: Microsoft.Services.Core.Process.JobObjectLimit
+    name: JobObjectLimit
+- uid: Microsoft.Services.Core.Retries
+  name: Microsoft.Services.Core.Retries
+  items:
+  - uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+    name: RetryingEventArgs
+  - uid: Microsoft.Services.Core.Retries.RetryPolicy
+    name: RetryPolicy
+  - uid: Microsoft.Services.Core.Retries.ShouldRetry
+    name: ShouldRetry
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  items:
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.AllExceptionsAreTransientErrorDetectionStrategy
+    name: AllExceptionsAreTransientErrorDetectionStrategy
+  - uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+    name: ITransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  items:
+  - uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+    name: ExponentialBackoff
+  - uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+    name: RetryStrategy

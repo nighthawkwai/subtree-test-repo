@@ -1,0 +1,1175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.RetryPolicy
+  commentId: T:Microsoft.Services.Core.Retries.RetryPolicy
+  id: RetryPolicy
+  parent: Microsoft.Services.Core.Retries
+  children:
+  - Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  - Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  - Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(System.Func{``0},System.Threading.CancellationToken)
+  - Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(System.Action,System.Threading.CancellationToken)
+  - Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  - Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  - Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,System.Exception,System.TimeSpan)
+  - Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  - Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: RetryPolicy
+  nameWithType: RetryPolicy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: RetryPolicy
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 11
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nProvides the base implementation of the retry mechanism for unreliable actions and transient conditions.\n"
+  example: []
+  syntax:
+    content: public class RetryPolicy
+    content.vb: Public Class RetryPolicy
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  commentId: P:Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  id: ErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: ErrorDetectionStrategy
+  nameWithType: RetryPolicy.ErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ErrorDetectionStrategy
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ErrorDetectionStrategy
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 16
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the instance of the error detection strategy.\n"
+  example: []
+  syntax:
+    content: public ITransientErrorDetectionStrategy ErrorDetectionStrategy { get; }
+    content.vb: Public ReadOnly Property ErrorDetectionStrategy As ITransientErrorDetectionStrategy
+    parameters: []
+    return:
+      type: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  commentId: P:Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  id: RetryStrategy
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: RetryStrategy
+  nameWithType: RetryPolicy.RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryStrategy
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: RetryStrategy
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 21
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nGets the retry strategy.\n"
+  example: []
+  syntax:
+    content: public RetryStrategy RetryStrategy { get; }
+    content.vb: Public ReadOnly Property RetryStrategy As RetryStrategy
+    parameters: []
+    return:
+      type: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  commentId: E:Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  id: Retrying
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: Retrying
+  nameWithType: RetryPolicy.Retrying
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.Retrying
+  type: Event
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Retrying
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nAn instance of a callback delegate that will be invoked whenever a retry condition is encountered.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<RetryingEventArgs> Retrying
+    content.vb: Public Event Retrying As EventHandler(Of RetryingEventArgs)
+    return:
+      type: System.EventHandler{Microsoft.Services.Core.Retries.RetryingEventArgs}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,System.Exception,System.TimeSpan)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32,System.Exception,System.TimeSpan)
+  id: OnRetrying(System.Int32,System.Exception,System.TimeSpan)
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: OnRetrying(Int32, Exception, TimeSpan)
+  nameWithType: RetryPolicy.OnRetrying(Int32, Exception, TimeSpan)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.OnRetrying(System.Int32, System.Exception, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: OnRetrying
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nNotifies the subscribers whenever a retry condition is encountered.\n"
+  example: []
+  syntax:
+    content: protected virtual void OnRetrying(int retryCount, Exception lastError, TimeSpan delay)
+    content.vb: Protected Overridable Sub OnRetrying(retryCount As Integer, lastError As Exception, delay As TimeSpan)
+    parameters:
+    - id: retryCount
+      type: System.Int32
+      description: The current retry attempt count.
+    - id: lastError
+      type: System.Exception
+      description: The exception that caused the retry conditions to occur.
+    - id: delay
+      type: System.TimeSpan
+      description: The delay that indicates how long the current thread will be suspended before the next iteration is invoked.
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  id: '#ctor(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy,Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)'
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: RetryPolicy(ITransientErrorDetectionStrategy, RetryStrategy)
+  nameWithType: RetryPolicy.RetryPolicy(ITransientErrorDetectionStrategy, RetryStrategy)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.RetryPolicy(Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy, Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy)
+  type: Constructor
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: .ctor
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nInitializes a new instance of the RetryPolicy class with the specified number of retry attempts and parameters \ndefining the progressive delay between retries.\n"
+  example: []
+  syntax:
+    content: public RetryPolicy(ITransientErrorDetectionStrategy errorDetectionStrategy, RetryStrategy retryStrategy)
+    content.vb: Public Sub New(errorDetectionStrategy As ITransientErrorDetectionStrategy, retryStrategy As RetryStrategy)
+    parameters:
+    - id: errorDetectionStrategy
+      type: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+      description: The ITransientErrorDetectionStrategy that is responsible for detecting transient conditions.
+    - id: retryStrategy
+      type: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+      description: The RetryStrategy to use for this retry policy.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(System.Action,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(System.Action,System.Threading.CancellationToken)
+  id: ExecuteAction(System.Action,System.Threading.CancellationToken)
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAction(Action, CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAction(Action, CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAction(System.Action, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ExecuteAction
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 63
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nRepetitively executes the specified action while it satisfies the current retry policy.\n"
+  example: []
+  syntax:
+    content: public virtual void ExecuteAction(Action action, CancellationToken cancellationToken)
+    content.vb: Public Overridable Sub ExecuteAction(action As Action, cancellationToken As CancellationToken)
+    parameters:
+    - id: action
+      type: System.Action
+      description: A delegate that represents the executable action that doesn't return any results.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: action - The action cannot be null.
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(System.Func{``0},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.Execute``1(System.Func{``0},System.Threading.CancellationToken)
+  id: Execute``1(System.Func{``0},System.Threading.CancellationToken)
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: Execute<TResult>(Func<TResult>, CancellationToken)
+  nameWithType: RetryPolicy.Execute<TResult>(Func<TResult>, CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.Execute<TResult>(System.Func<TResult>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: Execute
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 84
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nRepetitively executes the specified action while it satisfies the current retry policy.\n"
+  example: []
+  syntax:
+    content: public virtual TResult Execute<TResult>(Func<TResult> func, CancellationToken cancellationToken)
+    content.vb: Public Overridable Function Execute(Of TResult)(func As Func(Of TResult), cancellationToken As CancellationToken) As TResult
+    parameters:
+    - id: func
+      type: System.Func{{TResult}}
+      description: A delegate that represents the executable action that returns the result of type <em>TResult</em>.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    typeParameters:
+    - id: TResult
+      description: The type of result expected from the executable action.
+    return:
+      type: '{TResult}'
+      description: "\nThe result from the action.\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: func
+  nameWithType.vb: RetryPolicy.Execute(Of TResult)(Func(Of TResult), CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.Execute(Of TResult)(System.Func(Of TResult), System.Threading.CancellationToken)
+  name.vb: Execute(Of TResult)(Func(Of TResult), CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  id: ExecuteAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(Func<Task>, CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAsync(Func<Task>, CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ExecuteAsync
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nRepetitively executes the specified asynchronous task while it satisfies the current retry policy.\n"
+  example: []
+  syntax:
+    content: public Task ExecuteAsync(Func<Task> taskAction, CancellationToken cancellationToken)
+    content.vb: Public Function ExecuteAsync(taskAction As Func(Of Task), cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: taskAction
+      type: System.Func{System.Threading.Tasks.Task}
+      description: A function that returns a started task (also known as "hot" task).
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nA task that will run to completion if the original task completes successfully (either the\nfirst time or after retrying transient failures). If the task fails with a non-transient error or\nthe retry limit is reached, the returned task will transition to a faulted state and the exception must be observed.\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: taskAction
+  nameWithType.vb: RetryPolicy.ExecuteAsync(Func(Of Task), CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Func(Of Task), CancellationToken)
+- uid: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  commentId: M:Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  id: ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  parent: Microsoft.Services.Core.Retries.RetryPolicy
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync<TResult>(Func<Task<TResult>>, CancellationToken)
+  nameWithType: RetryPolicy.ExecuteAsync<TResult>(Func<Task<TResult>>, CancellationToken)
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync<TResult>(System.Func<System.Threading.Tasks.Task<TResult>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: ExecuteAsync
+    path: Product/source/Microsoft.Services.Core/Retries/RetryPolicy.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries
+  summary: "\nRepeatedly executes the specified asynchronous task while it satisfies the current retry policy.\n"
+  example: []
+  syntax:
+    content: public Task<TResult> ExecuteAsync<TResult>(Func<Task<TResult>> taskFunc, CancellationToken cancellationToken)
+    content.vb: Public Function ExecuteAsync(Of TResult)(taskFunc As Func(Of Task(Of TResult)), cancellationToken As CancellationToken) As Task(Of TResult)
+    parameters:
+    - id: taskFunc
+      type: System.Func{System.Threading.Tasks.Task{{TResult}}}
+      description: A function that returns a started task (also known as "hot" task).
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token.
+    typeParameters:
+    - id: TResult
+      description: The type of the result.
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: "\nReturns a task that will run to completion if the original task completes successfully (either the\nfirst time or after retrying transient failures). If the task fails with a non-transient error or\nthe retry limit is reached, the returned task will transition to a faulted state and the exception must be observed.\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: taskFunc
+  nameWithType.vb: RetryPolicy.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)), CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Services.Core.Retries.RetryPolicy.ExecuteAsync(Of TResult)(System.Func(Of System.Threading.Tasks.Task(Of TResult)), System.Threading.CancellationToken)
+  name.vb: ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)), CancellationToken)
+references:
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  isExternal: false
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  commentId: T:Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+  parent: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: ITransientErrorDetectionStrategy
+  nameWithType: ITransientErrorDetectionStrategy
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies.ITransientErrorDetectionStrategy
+- uid: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  commentId: N:Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  nameWithType: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+  fullName: Microsoft.Services.Core.Retries.ErrorDetectionStrategies
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  parent: Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: RetryStrategy
+  nameWithType: RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies
+- uid: System.EventHandler{Microsoft.Services.Core.Retries.RetryingEventArgs}
+  commentId: T:System.EventHandler{Microsoft.Services.Core.Retries.RetryingEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<RetryingEventArgs>
+  nameWithType: EventHandler<RetryingEventArgs>
+  fullName: System.EventHandler<Microsoft.Services.Core.Retries.RetryingEventArgs>
+  nameWithType.vb: EventHandler(Of RetryingEventArgs)
+  fullname.vb: System.EventHandler(Of Microsoft.Services.Core.Retries.RetryingEventArgs)
+  name.vb: EventHandler(Of RetryingEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+    name: RetryingEventArgs
+    nameWithType: RetryingEventArgs
+    fullName: Microsoft.Services.Core.Retries.RetryingEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+    name: RetryingEventArgs
+    nameWithType: RetryingEventArgs
+    fullName: Microsoft.Services.Core.Retries.RetryingEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullname.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: false
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Func{{TResult}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullname.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullname.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TResult
+  commentId: '!:TResult'
+  isExternal: false
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullname.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Func{System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<TResult>>
+  nameWithType: Func<Task<TResult>>
+  fullName: System.Func<System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of Task(Of TResult))
+  fullname.vb: System.Func(Of System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

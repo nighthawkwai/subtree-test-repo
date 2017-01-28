@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  id: Microsoft.Services.Core.Retries.RetryStrategies
+  children:
+  - Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+  isExternal: false
+  name: ExponentialBackoff
+  nameWithType: ExponentialBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.ExponentialBackoff
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  parent: Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: RetryStrategy
+  nameWithType: RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies

@@ -1,0 +1,638 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  commentId: T:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  id: RetryStrategy
+  parent: Microsoft.Services.Core.Retries.RetryStrategies
+  children:
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  - Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  langs:
+  - csharp
+  - vb
+  name: RetryStrategy
+  nameWithType: RetryStrategy
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: RetryStrategy
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents a retry strategy that determines the number of retry attempts and the interval between retries.\n"
+  example: []
+  syntax:
+    content: public abstract class RetryStrategy
+    content.vb: Public MustInherit Class RetryStrategy
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  id: DefaultClientRetryCount
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: DefaultClientRetryCount
+  nameWithType: RetryStrategy.DefaultClientRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientRetryCount
+  type: Field
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: DefaultClientRetryCount
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 12
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents the default number of retry attempts.\n"
+  example: []
+  syntax:
+    content: public static readonly int DefaultClientRetryCount
+    content.vb: Public Shared ReadOnly DefaultClientRetryCount As Integer
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  id: DefaultClientBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: DefaultClientBackoff
+  nameWithType: RetryStrategy.DefaultClientBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultClientBackoff
+  type: Field
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: DefaultClientBackoff
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 17
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents the default amount of time used when calculating a random delta in the exponential delay between retries.\n"
+  example: []
+  syntax:
+    content: public static readonly TimeSpan DefaultClientBackoff
+    content.vb: Public Shared ReadOnly DefaultClientBackoff As TimeSpan
+    return:
+      type: System.TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  id: DefaultMaxBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: DefaultMaxBackoff
+  nameWithType: RetryStrategy.DefaultMaxBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMaxBackoff
+  type: Field
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: DefaultMaxBackoff
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents the default maximum amount of time used when calculating the exponential delay between retries.\n"
+  example: []
+  syntax:
+    content: public static readonly TimeSpan DefaultMaxBackoff
+    content.vb: Public Shared ReadOnly DefaultMaxBackoff As TimeSpan
+    return:
+      type: System.TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  id: DefaultMinBackoff
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: DefaultMinBackoff
+  nameWithType: RetryStrategy.DefaultMinBackoff
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultMinBackoff
+  type: Field
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: DefaultMinBackoff
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents the default minimum amount of time used when calculating the exponential delay between retries.\n"
+  example: []
+  syntax:
+    content: public static readonly TimeSpan DefaultMinBackoff
+    content.vb: Public Shared ReadOnly DefaultMinBackoff As TimeSpan
+    return:
+      type: System.TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  commentId: F:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  id: DefaultRetryInterval
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: DefaultRetryInterval
+  nameWithType: RetryStrategy.DefaultRetryInterval
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.DefaultRetryInterval
+  type: Field
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: DefaultRetryInterval
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nRepresents the default interval between retries.\n"
+  example: []
+  syntax:
+    content: public static readonly TimeSpan DefaultRetryInterval
+    content.vb: Public Shared ReadOnly DefaultRetryInterval As TimeSpan
+    return:
+      type: System.TimeSpan
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  commentId: P:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  id: MaxRetryCount
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: MaxRetryCount
+  nameWithType: RetryStrategy.MaxRetryCount
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.MaxRetryCount
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxRetryCount
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nGets or sets the maximum retry count.\n"
+  example: []
+  syntax:
+    content: public int MaxRetryCount { get; set; }
+    content.vb: Public Property MaxRetryCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  commentId: M:Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry
+  id: GetShouldRetry
+  parent: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy
+  langs:
+  - csharp
+  - vb
+  name: GetShouldRetry()
+  nameWithType: RetryStrategy.GetShouldRetry()
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies.RetryStrategy.GetShouldRetry()
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: GetShouldRetry
+    path: Product/source/Microsoft.Services.Core/Retries/RetryStrategies/RetryStrategy.cs
+    startLine: 45
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Retries.RetryStrategies
+  summary: "\nReturns the corresponding ShouldRetry delegate.\n"
+  example: []
+  syntax:
+    content: public abstract ShouldRetry GetShouldRetry()
+    content.vb: Public MustOverride Function GetShouldRetry As ShouldRetry
+    return:
+      type: Microsoft.Services.Core.Retries.ShouldRetry
+      description: "\nThe ShouldRetry delegate.\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Microsoft.Services.Core.Retries.RetryStrategies
+  commentId: N:Microsoft.Services.Core.Retries.RetryStrategies
+  isExternal: false
+  name: Microsoft.Services.Core.Retries.RetryStrategies
+  nameWithType: Microsoft.Services.Core.Retries.RetryStrategies
+  fullName: Microsoft.Services.Core.Retries.RetryStrategies
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Microsoft.Services.Core.Retries.ShouldRetry
+  commentId: T:Microsoft.Services.Core.Retries.ShouldRetry
+  parent: Microsoft.Services.Core.Retries
+  isExternal: false
+  name: ShouldRetry
+  nameWithType: ShouldRetry
+  fullName: Microsoft.Services.Core.Retries.ShouldRetry
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  isExternal: false
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries

@@ -1,0 +1,922 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Process.JobObjectLimit
+  commentId: T:Microsoft.Services.Core.Process.JobObjectLimit
+  id: JobObjectLimit
+  parent: Microsoft.Services.Core.Process
+  children:
+  - Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  - Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  - Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  - Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  - Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  - Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  - Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  - Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  - Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  - Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  - Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  - Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  - Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  - Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  langs:
+  - csharp
+  - vb
+  name: JobObjectLimit
+  nameWithType: JobObjectLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit
+  type: Class
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: JobObjectLimit
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 7
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nUse this class to describe the limits to set for a given object.\n"
+  example: []
+  syntax:
+    content: public sealed class JobObjectLimit
+    content.vb: Public NotInheritable Class JobObjectLimit
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  id: KillAllProcessOnJobClose
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: KillAllProcessOnJobClose
+  nameWithType: JobObjectLimit.KillAllProcessOnJobClose
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobClose
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: KillAllProcessOnJobClose
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 15
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nKills all processes in the job object and their descendent processes.\n"
+  example: []
+  syntax:
+    content: public bool KillAllProcessOnJobClose { get; }
+    content.vb: Public ReadOnly Property KillAllProcessOnJobClose As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  id: MinWorkingset
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MinWorkingset
+  nameWithType: JobObjectLimit.MinWorkingset
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinWorkingset
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MinWorkingset
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe minimum workset memory available to a single process in the job in bytes\nSet with <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64%2cSystem.UInt64)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ulong MinWorkingset { get; }
+    content.vb: Public ReadOnly Property MinWorkingset As ULong
+    parameters: []
+    return:
+      type: System.UInt64
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  id: MaxWorkingSet
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxWorkingSet
+  nameWithType: JobObjectLimit.MaxWorkingSet
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxWorkingSet
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxWorkingSet
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe maximum workset memory available to a single process in the job in bytes\nSet with <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64%2cSystem.UInt64)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ulong MaxWorkingSet { get; }
+    content.vb: Public ReadOnly Property MaxWorkingSet As ULong
+    parameters: []
+    return:
+      type: System.UInt64
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  id: MaxProcessCommitSize
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxProcessCommitSize
+  nameWithType: JobObjectLimit.MaxProcessCommitSize
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxProcessCommitSize
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxProcessCommitSize
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe maximum virtual memory available to a process in bytes\n<xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ulong MaxProcessCommitSize { get; }
+    content.vb: Public ReadOnly Property MaxProcessCommitSize As ULong
+    parameters: []
+    return:
+      type: System.UInt64
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  id: MaxActiveProcesses
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxActiveProcesses
+  nameWithType: JobObjectLimit.MaxActiveProcesses
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxActiveProcesses
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxActiveProcesses
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe maximum number of active processes in the jobobject. Beyond that process creation will fail.\n<xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public uint MaxActiveProcesses { get; }
+    content.vb: Public ReadOnly Property MaxActiveProcesses As UInteger
+    parameters: []
+    return:
+      type: System.UInt32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  id: MaxCpuPercentageLimit
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxCpuPercentageLimit
+  nameWithType: JobObjectLimit.MaxCpuPercentageLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuPercentageLimit
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxCpuPercentageLimit
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe percentage of CPU allowed to be consumed by all processes in the job.\nThe number is percentage * 100. So 10% is 1000 \nSet with <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  remarks: "\nYou can use only One of the overloads <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public uint MaxCpuPercentageLimit { get; }
+    content.vb: Public ReadOnly Property MaxCpuPercentageLimit As UInteger
+    parameters: []
+    return:
+      type: System.UInt32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  id: MaxCpuRangePercentage
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MaxCpuRangePercentage
+  nameWithType: JobObjectLimit.MaxCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MaxCpuRangePercentage
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MaxCpuRangePercentage
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 60
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe max percentage of CPU allowed to be consumed by all pricesses in the job.\nThe number is percentage * 100. So 10% is 1000 \nSet with <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>. \n"
+  remarks: "\nYou can use only One of the overloads <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public uint MaxCpuRangePercentage { get; }
+    content.vb: Public ReadOnly Property MaxCpuRangePercentage As UInteger
+    parameters: []
+    return:
+      type: System.UInt32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  commentId: P:Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  id: MinCpuRangePercentage
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: MinCpuRangePercentage
+  nameWithType: JobObjectLimit.MinCpuRangePercentage
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.MinCpuRangePercentage
+  type: Property
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: MinCpuRangePercentage
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nThe min percentage of CPU reserved for all process in the job in each scheduling cycle.\nThe number is percentage * 100. So 10% is 1000 \nSet with <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  remarks: "\nYou can use only One of the overloads <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public uint MinCpuRangePercentage { get; }
+    content.vb: Public ReadOnly Property MinCpuRangePercentage As UInteger
+    parameters: []
+    return:
+      type: System.UInt32
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  id: KillAllProcessOnJobObjectClose(System.Boolean)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: KillAllProcessOnJobObjectClose(Boolean)
+  nameWithType: JobObjectLimit.KillAllProcessOnJobObjectClose(Boolean)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.KillAllProcessOnJobObjectClose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: KillAllProcessOnJobObjectClose
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  syntax:
+    content: public JobObjectLimit KillAllProcessOnJobObjectClose(bool killAll)
+    content.vb: Public Function KillAllProcessOnJobObjectClose(killAll As Boolean) As JobObjectLimit
+    parameters:
+    - id: killAll
+      type: System.Boolean
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  id: SetCpuLimit(System.UInt32)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: SetCpuLimit(UInt32)
+  nameWithType: JobObjectLimit.SetCpuLimit(UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetCpuLimit
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 97
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSets the max CPU allowed to be used in percentage * 100 by all processes in job object combined.\nSo for 10% you would pass in 1000.\nPass 0 to unset the value\n"
+  remarks: "\nOnly one of the two overloads can be used <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\nor <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit SetCpuLimit(uint maxPercentage)
+    content.vb: Public Function SetCpuLimit(maxPercentage As UInteger) As JobObjectLimit
+    parameters:
+    - id: maxPercentage
+      type: System.UInt32
+      description: max percentage * 100, so for 10%, it is 1000
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  id: SetCpuLimit(System.UInt32,System.UInt32)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: SetCpuLimit(UInt32, UInt32)
+  nameWithType: JobObjectLimit.SetCpuLimit(UInt32, UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32, System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetCpuLimit
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 125
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSets the min reserved and max CPU allowed to be used in percentage * 100 by all processes in job object combined.\nSo for 10% you would pass in 1000.\nPass 0,0 to unset the value.\n"
+  remarks: "\nOnly one of the two overloads can be used <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\nor <xref href=\"Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32%2cSystem.UInt32)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit SetCpuLimit(uint minPercentage, uint maxPercentage)
+    content.vb: Public Function SetCpuLimit(minPercentage As UInteger, maxPercentage As UInteger) As JobObjectLimit
+    parameters:
+    - id: minPercentage
+      type: System.UInt32
+      description: min percentage * 100
+    - id: maxPercentage
+      type: System.UInt32
+      description: max percentage * 100
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  id: SetProcessCommitMemory(System.UInt64)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: SetProcessCommitMemory(UInt64)
+  nameWithType: JobObjectLimit.SetProcessCommitMemory(UInt64)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetProcessCommitMemory
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 149
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSet the maximum virtual memory in bytes allowed to be used per process in the job object\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit SetProcessCommitMemory(ulong maxCommitSize)
+    content.vb: Public Function SetProcessCommitMemory(maxCommitSize As ULong) As JobObjectLimit
+    parameters:
+    - id: maxCommitSize
+      type: System.UInt64
+      description: ''
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  id: SetMaxActiveProcesses(System.UInt32)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: SetMaxActiveProcesses(UInt32)
+  nameWithType: JobObjectLimit.SetMaxActiveProcesses(UInt32)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetMaxActiveProcesses
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 168
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSets the maximum number of processes allowed in a job object. Process creation will fail after.\nSet 0 to unset the value.\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit SetMaxActiveProcesses(uint maxProcesses)
+    content.vb: Public Function SetMaxActiveProcesses(maxProcesses As UInteger) As JobObjectLimit
+    parameters:
+    - id: maxProcesses
+      type: System.UInt32
+      description: ''
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  id: SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  parent: Microsoft.Services.Core.Process.JobObjectLimit
+  langs:
+  - csharp
+  - vb
+  name: SetProcessworkingSetMemory(UInt64, UInt64)
+  nameWithType: JobObjectLimit.SetProcessworkingSetMemory(UInt64, UInt64)
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64, System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+      branch: master
+      repo: https://msdata.visualstudio.com/HDInsight/_git/Common-CSharp
+    id: SetProcessworkingSetMemory
+    path: Product/source/Microsoft.Services.Core/Process/JobObjectLimit.cs
+    startLine: 187
+  assemblies:
+  - Microsoft.Services.Core
+  namespace: Microsoft.Services.Core.Process
+  summary: "\nSets the working set memory range allowed per process.\n"
+  example: []
+  syntax:
+    content: public JobObjectLimit SetProcessworkingSetMemory(ulong minProcessWorkingSet, ulong maxProcessWorkingSet)
+    content.vb: Public Function SetProcessworkingSetMemory(minProcessWorkingSet As ULong, maxProcessWorkingSet As ULong) As JobObjectLimit
+    parameters:
+    - id: minProcessWorkingSet
+      type: System.UInt64
+      description: min working set in bytes
+    - id: maxProcessWorkingSet
+      type: System.UInt64
+      description: max working set in bytes
+    return:
+      type: Microsoft.Services.Core.Process.JobObjectLimit
+      description: ''
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Services.Core.Process
+  commentId: N:Microsoft.Services.Core.Process
+  isExternal: false
+  name: Microsoft.Services.Core.Process
+  nameWithType: Microsoft.Services.Core.Process
+  fullName: Microsoft.Services.Core.Process
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessworkingSetMemory(System.UInt64,System.UInt64)
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetProcessCommitMemory(System.UInt64)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetMaxActiveProcesses(System.UInt32)
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+  commentId: M:Microsoft.Services.Core.Process.JobObjectLimit.SetCpuLimit(System.UInt32,System.UInt32)
+- uid: Microsoft.Services.Core.Process.JobObjectLimit
+  commentId: T:Microsoft.Services.Core.Process.JobObjectLimit
+  parent: Microsoft.Services.Core.Process
+  isExternal: false
+  name: JobObjectLimit
+  nameWithType: JobObjectLimit
+  fullName: Microsoft.Services.Core.Process.JobObjectLimit

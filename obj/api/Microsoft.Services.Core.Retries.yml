@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  id: Microsoft.Services.Core.Retries
+  children:
+  - Microsoft.Services.Core.Retries.RetryingEventArgs
+  - Microsoft.Services.Core.Retries.RetryPolicy
+  - Microsoft.Services.Core.Retries.ShouldRetry
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries
+  type: Namespace
+  assemblies:
+  - Microsoft.Services.Core
+references:
+- uid: Microsoft.Services.Core.Retries.RetryingEventArgs
+  commentId: T:Microsoft.Services.Core.Retries.RetryingEventArgs
+  isExternal: false
+  name: RetryingEventArgs
+  nameWithType: RetryingEventArgs
+  fullName: Microsoft.Services.Core.Retries.RetryingEventArgs
+- uid: Microsoft.Services.Core.Retries.RetryPolicy
+  commentId: T:Microsoft.Services.Core.Retries.RetryPolicy
+  isExternal: false
+  name: RetryPolicy
+  nameWithType: RetryPolicy
+  fullName: Microsoft.Services.Core.Retries.RetryPolicy
+- uid: Microsoft.Services.Core.Retries.ShouldRetry
+  commentId: T:Microsoft.Services.Core.Retries.ShouldRetry
+  parent: Microsoft.Services.Core.Retries
+  isExternal: false
+  name: ShouldRetry
+  nameWithType: ShouldRetry
+  fullName: Microsoft.Services.Core.Retries.ShouldRetry
+- uid: Microsoft.Services.Core.Retries
+  commentId: N:Microsoft.Services.Core.Retries
+  isExternal: false
+  name: Microsoft.Services.Core.Retries
+  nameWithType: Microsoft.Services.Core.Retries
+  fullName: Microsoft.Services.Core.Retries
