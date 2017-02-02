@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.4.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h2 id="introduction">Introduction</h2>
+              
+<p>Microsoft.Services.Logging library can be used for emitting traces/logs on any system that supports
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dn904632.aspx">self-describing Event Tracing for Windows(ETW)</a>. This document uses
+ETW terminology extensively, so it is advisable to learn the basics of ETW. It also helps with 
+understanding the flow of logs end-to-end. This <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363668.aspx">MSDN page</a> should get you 
+started.</p>
+<h2 id="installation">Installation</h2>
+<p>This logging library is available as a nuget package. To install it, run the following command in the
+NuGet <a href="https://go.microsoft.com/fwlink/?LinkID=800677">Package Manager Console</a>.</p>
+<p><code>PM&gt; 
+Install-Package Microsoft.Services.Logging -Source 
+&quot;https://msdata.pkgs.visualstudio.com/_packaging/SQLMDW_HDInsight_Services/nuget/v3/index.json&quot;</code></p>
+<p>Or run the following in a Windows command prompt.</p>
+<p><code>C:\&gt; 
+nuget.exe install Microsoft.Services.Logging -Source 
+&quot;https://msdata.pkgs.visualstudio.com/_packaging/SQLMDW_HDInsight_Services/nuget/v3/index.json&quot;</code></p>
+<h2 id="producing-logs">Producing logs</h2>
+<p>To emit logs from your service, you need to first define your logging events through logging interfaces. 
+A logging interface is an interface with special attributes and each of it&#39;s methods defines a new 
+logging event type. Consider the following logging interface as an example.</p>
+<pre><code class="lang-csharp">    [EtwEventSource(&quot;Microsoft-HdInsight&quot;)]
+    [EtwEventNameSuffix(&quot;-Common&quot;)]
+    [EtwEventValueProvider(typeof(TraceLoggerValueProvider))]
+    public interface ITraceLogger
+    {
+        [EtwEventNamePrefix(&quot;Log&quot;)]
+        void TraceLog(LogMessage message);
+    }
+
+    [EventData]
+    public class TraceLoggerValueProvider : CallContextLoggingValueProviderBase&lt;TraceLoggerValueProvider&gt;
+    {
+        public string CorrelationId { get; set; }
+
+        public TraceLoggerValueProvider() {}
+
+        public static TraceLoggerValueProvider Create(string correlationId)
+        {
+            return Current = new TraceLoggerValueProvider {CorrelationId = correlationId};
+        }
+    }
+
+    [EventData]
+    public class LogMessage
+    {
+        public string Message { get; set; }
+
+        public TraceLevel TraceLevel { get; set; }
+    }
+</code></pre><pre><code class="lang-csharp">    ...
+
+    using (TraceLoggerValueProvider.Create(Guid.NewGuid().ToString()))
+    {
+        var logMessage = new LogMessage
+        {
+            Message = &quot;Hello world!&quot;,
+            TraceLevel = TraceLevel.Info
+        };
+
+        var logger = LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+        logger.TraceLog(logMessage);
+    }
+</code></pre><p><code>ITraceLogger</code> logging interface defines an event called <code>Log-Common</code> using the method <code>TraceLog</code>.
+Let&#39;s explore each of the artifacts in the above code in detail.</p>
+<ul>
+<li><p><strong><em>EtwEventSource attribute</em></strong>: This is the ETW provider(or Event Source) name. In simple terms,
+an ETW provider is an application that is instrumented to emit logs to ETW. A provider is uniquely 
+identified by it&#39;s GUID. Provider name set using this attribute is internally converted to a GUID 
+using an hash algorithm to form a unique identifier. This attribute must be set on all the logging
+interfaces and provider name cannot be null or empty. All the logs emitted using a logging interface
+will be written to ETW with the provider name set on the interface. <strong>It is recommended to use the 
+same provider name for all the logging interfaces in a component or a service.</strong></p>
+</li>
+<li><p><strong><em>EtwEventNamePrefix attribute</em></strong>: Event name uniquely identifies a logging event type within an
+Event Source. The string specified with this attribute forms the prefix of the event name. This
+attribute must be specified for all the methods(logging events) defined in an interface and prefix
+cannot be null or empty.</p>
+</li>
+<li><p><strong><em>EtwEventNameSuffix attribute</em></strong>: The string specified with this attribute forms the suffix of
+the event name. This suffix will be appended to the prefix attributed with each method in an interface
+to form the event name for the corresponding logging event. The suffix can be an empty string.</p>
+</li>
+<li><p><strong><em>EtwEventValueProvider attribute</em></strong>: Most often, we have a set of metadata values that we want
+to add to every log emitted in an activity. ValueProvider exactly helps with this(more details about
+it are provided below). All the public properties in a value provider type specified with this
+attribute will be automatically added to all the log events defined in a logging interface.</p>
+</li>
+<li><p><strong><em>Interface method</em></strong>: Each method in a logging interface defines a new log event type. <strong>It must 
+have exactly one parameter</strong> and it can be either a simple or complex type. Public properties in the
+in the method parameter(if it is of complex type, otherwise the parameter itself) and public properties
+in the value provider object form the fields of the log event. </p>
+</li>
+<li><p><strong><em>EventData attribute</em></strong>: All complex method parameter types and value provider types must be 
+attributed with <code>EventData</code> which is defined in namespace <code>System.Diagnostics.Tracing</code>. This is 
+required for serializing complex objects when writing logs to ETW. Failing to set this will result 
+in an exception. <strong>If a method parameter type or value provider type has a public property which is
+also complex, then the property type must also be attributed with <code>EventData</code>.</strong></p>
+</li>
+</ul>
+<p>Now that the logging events have been defined, we can invoke the logger factory to create a logger
+which implements this logging interface and call it&#39;s methods to emit logs to ETW(as shown in the
+second code snippet above).</p>
+<p>Value provider is first instantiated/initialized by calling the <code>Create</code> method which creates an
+instance of it and assigns it to <code>Current</code> static variable defined in the base class(more details
+about it in Value Provider section). An instance of the object that is to be logged is created and 
+<code>LoggerFactory.CreateLogger&lt;&gt;()</code> is invoked to create a logger which implements <code>ITraceLogger</code>.
+To write the log to ETW, <code>TraceLog</code> method in the logger instance is called, which logs the fields
+in the method parameter and value provider object.</p>
+<p>When <code>LoggerFactory.CreateLogger&lt;&gt;()</code> method is invoked, the name of the class from which it is 
+called is noted down and engraved in the logger retured by it. To all the logs written to ETW using
+this logger, a field called <code>Class</code> is added and set to the value engraved in the logger. If the
+same logger instance is used in a different class, it would still log the name of the class in which
+the logger was created, which is misleading. So <strong>you should always create a new logger instance in
+every class.</strong></p>
+<h2 id="consuming-logs">Consuming logs</h2>
+<p>This library writes logs to ETW using self-describing event format(TraceLogging), so any application
+capable of reading this type of logs from ETW can consume them.</p>
+<p>To quickly test logging for your application, you can use a tool called <code>DevLogViewer</code> which reads
+logs from ETW and displays them on a GUI. The tool is located at</p>
+<pre><code>\\fsu\shares\hdibuilddrop\Logging\Tools\DevLogViewer\DevLogViewer.exe
+</code></pre><p>Before emitting logging from your app, you need to run this tool which will create an ETW session 
+and turn on ETW provider <code>Microsoft-HdInsight-Dev</code>. Also, you need to set the flag 
+<code>LoggerFactory.EmitDeveloperLogs</code> to <code>true</code> in your application so that all the logs are emitted
+using this provider name. Enabling developer logs will have a significant impact on performance, so
+you should never turn it on in production. Here&#39;s a snapshot of the tool: </p>
+<p><img src="Images/DevLogViewerSnapshot.JPG" alt="Snapshot"></p>
+<p>The tool has a dropdown at the top which shows the list of all event types. You can select one to 
+view logs of that type.</p>
+<h2 id="mds-config-fragments">MDS config fragments</h2>
+<p>Most services on Microsoft Azure use <a href="https://jarvis-west.dc.ad.msft.net/#/documents">MDS</a> for 
+monitoring, diagnostics and analytics. Monitoring Agent(MA), used for reading and uploading logs 
+emitted by services, has support for reading self describing events from ETW, which means it can be
+used for consuming logs emitted using this library. However, MA needs to know which ETW providers to 
+read logs from, events emitted by each of these providers and which MDS tables to write logs to. This
+information is supplied to MA through MDS configuration file.</p>
+<p>Instead of you handcrafting this MDS config file, this library will generate sections of the config
+file where the above mentioned information has to be provided. When you install this library to your 
+project using NuGet, it adds a build target called <code>Microsoft.Services.Logging.targets</code> to your
+project file. This target contains a task which reflects over your assembly, searches for all the 
+logging interfaces, validates them and generates MDS config fragments when you build your project. 
+The generated config will be stored in <code>MdsConfigs</code> folder in the bin drop and the filename is your
+assembly name with &#39;.xml&#39; extestion. However, if the file path length of the generated config exceeds
+the limit set by the operating system, the filename will be shortened.</p>
+<p>The target added to your project leverages the incremental build feature of MsBuild, so the task
+which generates the MDS config fragments will not run every time you build your project. It will 
+only run if there are any changes in your project, thereby not adding to the build time with every
+buld. You can also turn off MDS config fragments generation by setting the build property
+<code>RunMdsConfigFragmentsGeneration</code> to false.</p>
+<p>The generated config will also contain information required to enable DGrep and LogAnalytics for 
+seaching through logs on Geneva and for doing indexed log search using Kusto respectively. As 
+mentioned earlier, MA also needs to know which MDS table to write the logs to for each event type.
+The build task provides that information by normalizing the event name(removing all characters other
+than letters or digits from the event name) to form the MDS table name.</p>
+<p>It&#39;s possible for different ETW providers to define logging events with the same name, in which case
+the events from these providers end up in the same MDS table. MDS logs the provider name along with
+other fields so you can filter logs from a particular provider using it&#39;s name.</p>
+<p>If you have a project with just one logging interface <code>ITraceLogger</code> defined above, the generated
+MDS config fragments will be similar to below.</p>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;MonitoringManagement&gt;
+  &lt;Events&gt;
+    &lt;EtwProviders&gt;
+      &lt;EtwProvider name=&quot;Microsoft-HdInsight&quot; format=&quot;EventSource&quot; storeType=&quot;CentralBond&quot; account=&quot;&quot; duration=&quot;&quot;&gt;
+        &lt;DefaultEvent eventName=&quot;DefaultMicrosoftHdInsightEvents&quot; /&gt;
+        &lt;Event name=&quot;Log-Common&quot; eventName=&quot;LogCommon&quot; /&gt;
+      &lt;/EtwProvider&gt;
+    &lt;/EtwProviders&gt;
+  &lt;/Events&gt;
+  &lt;EventStreamingAnnotations&gt;
+    &lt;EventStreamingAnnotation name=&quot;LogCommon&quot;&gt;
+      &lt;DGrep&gt;&lt;![CDATA[]]&gt;&lt;/DGrep&gt;
+      &lt;LogAnalytics&gt;
+        &lt;Content&gt;LogAnalyticsContent&lt;/Content&gt;
+      &lt;/LogAnalytics&gt;
+    &lt;/EventStreamingAnnotation&gt;
+  &lt;/EventStreamingAnnotations&gt;
+&lt;/MonitoringManagement&gt;
+</code></pre><p>In <code>EtwProviders</code> section, an element is added for ETW provider <code>Microsoft-HdInsight</code>. It has two 
+child elements: <code>DefaultEvent</code> and <code>Log-Common</code> event. If MA encounters any undefined events from 
+this provider, they are logged to the MDS table <code>DefaultMicrosoftHdInsightEvents</code> specified in 
+<code>DefaultEvent</code> element. The other element for <code>Log-Common</code> ETW event has an attribute <code>eventName</code>,
+which is the MDS table to which the logs are written to.</p>
+<h2 id="value-provider">Value Provider</h2>
+<p>Most applications add some metadata to all the log events emitted in an activity to provide context
+e.g., Activity Id, Correlation Id or some activity specific information like operation name, 
+Subscription Id etc., Adding this context to every log event manually will result in a lot of boiler
+plate code and, could be missed to add it at all places in the code. This library provides a very 
+simple solution to overcome these problems.<br></p>
+<p>First, you need to define a value provider which contains all the metadata fields as public properties.
+The value provider must have a parameterless constructor and must derive from another class called 
+<code>CallContextLoggingValueProviderBase</code> defined in this library. For example, </p>
+<pre><code class="lang-csharp">    public class TraceLoggerValueProvider : CallContextLoggingValueProviderBase&lt;TraceLoggerValueProvider&gt;
+    {
+        public string CorrelationId { get; set; }
+
+        public TraceLoggerValueProvider() {}
+
+        public static TraceLoggerValueProvider Create(string correlationId)
+        {
+            return Current = new TraceLoggerValueProvider {CorrelationId = correlationId};
+        }
+    }
+</code></pre><p>Once you define the value provider, you need to let the logging library know that metadata defined
+in this value provider must be added to all the log events in a logging interface by passing the 
+value provider type using <code>EtwEventValueProvider</code> attribute(as described in Producing logs section).
+Now, all you have to do is instantiate the value provider and set it as the current logging context 
+by assigning it to the <code>Current</code> static property(which is defined in the base class) as shown in the
+<code>Create</code> method above. You can retrieve the current logging context by calling <code>get</code> on <code>Current</code>
+property. If no logging context is currently set, then it will set an uninitialized instance of the 
+value provider as the current context and returns it.</p>
+<pre><code class="lang-csharp">    using (TraceLoggerValueProvider.Create(Guid.NewGuid().ToString()))
+    {
+        var logMessage = new LogMessage
+        {
+            Message = &quot;Hello world!&quot;,
+            TraceLevel = TraceLevel.Info
+        };
+
+        var logger = LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+        logger.TraceLog(logMessage);
+    }
+</code></pre><p>In the above code, when <code>logger.TraceLog(logMessage)</code> is called, <code>CorrelationId</code> defined in the
+value provider will be added to the log automatically. If it is called when no context is set(outside
+of <code>using</code> statement in the above example), uninitialized instance of value provider is logged with
+the event. Instead of using <code>using</code> statement as in the above example, you could also call dispose 
+on value provider instance explicitly to remove it as the context. The below example is semantically
+equivalent to the one above.</p>
+<pre><code class="lang-csharp">    var valueProvider = TraceLoggerValueProvider.Create(Guid.NewGuid().ToString());
+
+    var logMessage = new LogMessage
+    {
+        Message = &quot;Hello world!&quot;,
+        TraceLevel = TraceLevel.Info
+    };
+
+    var logger = LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+    logger.TraceLog(logMessage);
+
+    valueProvider.Dispose();
+</code></pre><p>When a new value provider instance is set as the current context before disposing the old instance,
+the new instance is added as a child node to the old instance internally, and the new instance gets 
+logged subsquently with all the events. When you dispose the new instance, the old instance will be 
+set as the current context automatically. It is not necessary to dispose the value provider instances
+in order. You could dispose the old instance before disposing the new instance. Consider you have set
+instances A, B, C in order and disposed instance B. Instance C will be the current logging context
+and if you dispose it, instance A will be set as the current logging context, as B has already been
+disposed.</p>
+<pre><code class="lang-csharp">    var logger = LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+
+    using(var valueProvider1 = TraceLoggerValueProvider.Create(Guid.NewGuid().ToString()))
+    {
+        var logMessageA = new LogMessage{ Message = &quot;A&quot;, TraceLevel = TraceLevel.Info };
+        logger.TraceLog(logMessageA);
+
+        using(var valueProvider2 = TraceLoggerValueProvider.Create(Guid.NewGuid().ToString()))
+        {
+            var logMessageB = new LogMessage{ Message = &quot;B&quot;, TraceLevel = TraceLevel.Info };
+            logger.TraceLog(logMessageB);
+        }
+
+        var logMessageC = new LogMessage{ Message = &quot;C&quot;, TraceLevel = TraceLevel.Info };
+        logger.TraceLog(logMessageC);
+    }
+</code></pre><p>In the above example, <code>valueProvider1</code> is logged with <code>LogMessageA</code> and <code>LogMessageC</code> while 
+<code>valueProvider2</code> is logged with <code>LogMessageB</code>.</p>
+<p>If a thread has some logging context set and creates a child thread, then the logging context will be
+passed down to the child thread as well. To better understand it&#39;s behavior, go through the following
+scenarios. All the value provider instances are assumed to be of the same type.</p>
+<ul>
+<li>Thread 1 sets instance A as the context and creates thread 2. Below are the logging contexts of 
+the threads.
+      Thread1: A
+      Thread2: A</li>
+<li>Thread1 sets instance A as the context, then sets instance B as the context without disposing A 
+and creates thread 2.
+      Thread1: B, A
+      Thread2: B, A</li>
+<li>Thread 1 sets instance A as the context and creates thread 2. Thread 2 sets a new instance B as the 
+context.
+      Thread1: A
+      Thread2: B, A</li>
+<li>Thread 1 sets instance A as the context and creates thread 2. After creating the child thread, 
+thread1 disposes instance A.
+      Thread1: 
+      Thread2: A</li>
+<li>Thread 1 sets instance A as the context and creates threads 2, 3. Thread 1 sets instance D as the
+context, thread 2 sets instance B as the context and thread 3 sets instance C as the context.
+      Thread1: D, A
+      Thread1: B, A
+      Thread1: C, A</li>
+</ul>
+<h2 id="logger-extensions">Logger extensions</h2>
+<p>You can create extension methods for your logging interfaces to do any custom operations before
+emittin logs to ETW like scrubbing PIL info, formatting data, setting trace level etc., In the below
+example, two extension methods are created for <code>ITraceLogger</code>, one to emit logs with trace level set
+to info and the other with trace level set to error.</p>
+<pre><code class="lang-csharp">    public static class TraceLoggerExtensions
+    {
+        public static void LogInfo(this ITraceLogger logger, string message)    
+        {
+            Contract.AssertArgNotNull(logger, nameof(logger));
+            logger.TraceLog(new LogMessage { Message = message, TraceLevel = TraceLevel.Info });
+        }
+
+        public static void LogError(this ITraceLogger logger, string message)    
+        {
+            Contract.AssertArgNotNull(logger, nameof(logger));
+            logger.TraceLog(new LogMessage { Message = message, TraceLevel = TraceLevel.Error });
+        }
+    }
+
+    public static void Main(string[] args)
+    {
+        var logger = LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+        logger.LogInfo(&quot;Executing operation&quot;);
+        logger.LogError(&quot;Hit an exception&quot;);
+    }
+</code></pre><h2 id="extending-a-logging-interface">Extending a logging interface</h2>
+<p>You can extend a logging interface to define additional logging events or to override any of the 
+attributes set on the interface. Let&#39;s say you create a new interface which extends a logging
+interface to define additional events but not to override it&#39;s attributes, you still need to set all
+the attributes on the new interface.</p>
+<pre><code class="lang-csharp">    [EtwEventNameSuffix(&quot;-RestClient&quot;)]
+    [EtwEventSource(&quot;Microsoft-HdInsight&quot;)]
+    [EtwEventValueProvider(typeof(RestValueProvider))]
+    public interface IRestClientLogger : ITraceLogger
+    {
+        [EtwEventNamePrefix(&quot;HttpClientRequest&quot;)]
+        void Trace(OutgoingRestRequest request);
+
+        [EtwEventNamePrefix(&quot;HttpClientResponse&quot;)]
+        void Trace(IncomingRestResponse response);
+    }
+</code></pre><p>In the above example, <code>IRestClientLogger</code> extends <code>ITraceLogger</code> logging interface and defines two
+additional events <code>HttpClientRequest-RestClient</code>, <code>HttpClientRequest-ResponseClient</code>. It also
+overrides event name suffix and value provider type.</p>
+<h2 id="override-logging-interface">Override logging interface</h2>
+<p>Logging library provides a functionality to override a logging interface with another one which 
+extends it. When <code>LoggerFactory</code> is invoked to create an instance of overridden logging interface,
+an instance of the logging interface which overrode it is returned instead. To override an interface,
+you need to call <code>LoggerFactory.OverrideInterface()</code> method as shown below.</p>
+<pre><code class="lang-csharp">    public static void Main(string[] args)
+    {
+        LoggerFactory.OverrideInterface(typeof(ITraceLogger), typeof(IExtendedTraceLogger));
+
+        var logger = (IExtendedTraceLogger)LoggerFactory.CreateLogger&lt;ITraceLogger&gt;();
+    }
+
+    [EtwEventSource(&quot;Microsoft-HdInsight-RegionalProxy&quot;)]
+    [EtwEventNameSuffix(&quot;-Common&quot;)]
+    [EtwEventValueProvider(typeof(TraceLoggerValueProvider))]
+    public interface IExtendedTraceLogger : ITraceLogger
+    {
+    }
+</code></pre><p>This feature is very useful when you want to override any interface attributes without modifying 
+existing code. Consider your project references an assembly which uses <code>ITraceLogger</code> to emit logs.
+ETW provider name for <code>ITraceLogger</code> is set to <code>Microsoft-HdInsight</code>, so the assembly emits all 
+the logs using this provider name. But, when using this assembly in your project, you want the logs
+to be emitted using a different provider name <code>Microsoft-HdInsight-RegionalProxy</code>. To do this,
+define a new logging interface which extends <code>ITraceLogger</code> and set the provider name to a desired
+one and leave the rest of the attributes unchanged. Invoke <code>LoggerFactory.OverrideInterface()</code>
+as shown in the above example and all the logs emitted by this assembly in your project will now be
+using the new provider name.</p>
+<p>To remove override for a logging interface, call <code>LoggerFactory.RemoveInterfaceOverride()</code> method.</p>
+<pre><code class="lang-csharp">    LoggerFactory.RemoveInterfaceOverride(typeof(ITraceLogger));
+</code></pre>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://msdata.visualstudio.com/DefaultCollection/HDInsight/_git/Common-CSharp#path=/Product/source/Microsoft.Services.Logging/index.md" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
