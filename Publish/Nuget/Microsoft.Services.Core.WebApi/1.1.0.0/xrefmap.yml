@@ -1,0 +1,108 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Services.Core.WebApi
+  name: Microsoft.Services.Core.WebApi
+  href: api/Microsoft.Services.Core.WebApi.html#Microsoft_Services_Core_WebApi
+  commentId: N:Microsoft.Services.Core.WebApi
+  fullName: Microsoft.Services.Core.WebApi
+- uid: Microsoft.Services.Core.WebApi.IncomingRestRequest
+  name: IncomingRestRequest
+  href: api/Microsoft.Services.Core.WebApi.IncomingRestRequest.html#Microsoft_Services_Core_WebApi_IncomingRestRequest
+  commentId: T:Microsoft.Services.Core.WebApi.IncomingRestRequest
+  fullName: Microsoft.Services.Core.WebApi.IncomingRestRequest
+- uid: Microsoft.Services.Core.WebApi.IncomingRestRequest.Headers
+  name: Headers
+  href: api/Microsoft.Services.Core.WebApi.IncomingRestRequest.html#Microsoft_Services_Core_WebApi_IncomingRestRequest_Headers
+  commentId: P:Microsoft.Services.Core.WebApi.IncomingRestRequest.Headers
+  fullName: Microsoft.Services.Core.WebApi.IncomingRestRequest.Headers
+- uid: Microsoft.Services.Core.WebApi.IncomingRestRequest.IncomingIp
+  name: IncomingIp
+  href: api/Microsoft.Services.Core.WebApi.IncomingRestRequest.html#Microsoft_Services_Core_WebApi_IncomingRestRequest_IncomingIp
+  commentId: P:Microsoft.Services.Core.WebApi.IncomingRestRequest.IncomingIp
+  fullName: Microsoft.Services.Core.WebApi.IncomingRestRequest.IncomingIp
+- uid: Microsoft.Services.Core.WebApi.IncomingRestRequest.UserAgent
+  name: UserAgent
+  href: api/Microsoft.Services.Core.WebApi.IncomingRestRequest.html#Microsoft_Services_Core_WebApi_IncomingRestRequest_UserAgent
+  commentId: P:Microsoft.Services.Core.WebApi.IncomingRestRequest.UserAgent
+  fullName: Microsoft.Services.Core.WebApi.IncomingRestRequest.UserAgent
+- uid: Microsoft.Services.Core.WebApi.IServiceRestApiLogger
+  name: IServiceRestApiLogger
+  href: api/Microsoft.Services.Core.WebApi.IServiceRestApiLogger.html#Microsoft_Services_Core_WebApi_IServiceRestApiLogger
+  commentId: T:Microsoft.Services.Core.WebApi.IServiceRestApiLogger
+  fullName: Microsoft.Services.Core.WebApi.IServiceRestApiLogger
+- uid: Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestProcessed(Microsoft.Services.Core.WebApi.OutgoingRestResponse)
+  name: RestRequestProcessed(OutgoingRestResponse)
+  href: api/Microsoft.Services.Core.WebApi.IServiceRestApiLogger.html#Microsoft_Services_Core_WebApi_IServiceRestApiLogger_RestRequestProcessed_Microsoft_Services_Core_WebApi_OutgoingRestResponse_
+  commentId: M:Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestProcessed(Microsoft.Services.Core.WebApi.OutgoingRestResponse)
+  fullName: Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestProcessed(Microsoft.Services.Core.WebApi.OutgoingRestResponse)
+- uid: Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestRecieved(Microsoft.Services.Core.WebApi.IncomingRestRequest)
+  name: RestRequestRecieved(IncomingRestRequest)
+  href: api/Microsoft.Services.Core.WebApi.IServiceRestApiLogger.html#Microsoft_Services_Core_WebApi_IServiceRestApiLogger_RestRequestRecieved_Microsoft_Services_Core_WebApi_IncomingRestRequest_
+  commentId: M:Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestRecieved(Microsoft.Services.Core.WebApi.IncomingRestRequest)
+  fullName: Microsoft.Services.Core.WebApi.IServiceRestApiLogger.RestRequestRecieved(Microsoft.Services.Core.WebApi.IncomingRestRequest)
+- uid: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1
+  name: LogRequestAndResponseParamsFilter<T>
+  href: api/Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter-1.html#Microsoft_Services_Core_WebApi_LogRequestAndResponseParamsFilter_1
+  commentId: T:Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1
+  name.vb: LogRequestAndResponseParamsFilter(Of T)
+  fullName: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter<T>
+  fullName.vb: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter(Of T)
+- uid: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.GetClientIpAddress(System.Net.Http.HttpRequestMessage)
+  name: GetClientIpAddress(HttpRequestMessage)
+  href: api/Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter-1.html#Microsoft_Services_Core_WebApi_LogRequestAndResponseParamsFilter_1_GetClientIpAddress_System_Net_Http_HttpRequestMessage_
+  commentId: M:Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.GetClientIpAddress(System.Net.Http.HttpRequestMessage)
+  fullName: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter<T>.GetClientIpAddress(System.Net.Http.HttpRequestMessage)
+  fullName.vb: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter(Of T).GetClientIpAddress(System.Net.Http.HttpRequestMessage)
+- uid: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)
+  name: OnActionExecutedAsync(HttpActionExecutedContext, CancellationToken)
+  href: api/Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter-1.html#Microsoft_Services_Core_WebApi_LogRequestAndResponseParamsFilter_1_OnActionExecutedAsync_System_Web_Http_Filters_HttpActionExecutedContext_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter<T>.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter(Of T).OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  name: OnActionExecutingAsync(HttpActionContext, CancellationToken)
+  href: api/Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter-1.html#Microsoft_Services_Core_WebApi_LogRequestAndResponseParamsFilter_1_OnActionExecutingAsync_System_Web_Http_Controllers_HttpActionContext_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter`1.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter<T>.OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext, System.Threading.CancellationToken)
+  fullName.vb: Microsoft.Services.Core.WebApi.LogRequestAndResponseParamsFilter(Of T).OnActionExecutingAsync(System.Web.Http.Controllers.HttpActionContext, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.WebApi.OutgoingRestResponse
+  name: OutgoingRestResponse
+  href: api/Microsoft.Services.Core.WebApi.OutgoingRestResponse.html#Microsoft_Services_Core_WebApi_OutgoingRestResponse
+  commentId: T:Microsoft.Services.Core.WebApi.OutgoingRestResponse
+  fullName: Microsoft.Services.Core.WebApi.OutgoingRestResponse
+- uid: Microsoft.Services.Core.WebApi.OutgoingRestResponse.Headers
+  name: Headers
+  href: api/Microsoft.Services.Core.WebApi.OutgoingRestResponse.html#Microsoft_Services_Core_WebApi_OutgoingRestResponse_Headers
+  commentId: P:Microsoft.Services.Core.WebApi.OutgoingRestResponse.Headers
+  fullName: Microsoft.Services.Core.WebApi.OutgoingRestResponse.Headers
+- uid: Microsoft.Services.Core.WebApi.OutgoingRestResponse.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Microsoft.Services.Core.WebApi.OutgoingRestResponse.html#Microsoft_Services_Core_WebApi_OutgoingRestResponse_HttpStatusCode
+  commentId: P:Microsoft.Services.Core.WebApi.OutgoingRestResponse.HttpStatusCode
+  fullName: Microsoft.Services.Core.WebApi.OutgoingRestResponse.HttpStatusCode
+- uid: Microsoft.Services.Core.WebApi.OutgoingRestResponse.LatencyInMs
+  name: LatencyInMs
+  href: api/Microsoft.Services.Core.WebApi.OutgoingRestResponse.html#Microsoft_Services_Core_WebApi_OutgoingRestResponse_LatencyInMs
+  commentId: P:Microsoft.Services.Core.WebApi.OutgoingRestResponse.LatencyInMs
+  fullName: Microsoft.Services.Core.WebApi.OutgoingRestResponse.LatencyInMs
+- uid: Microsoft.Services.Core.WebApi.RestLogBase
+  name: RestLogBase
+  href: api/Microsoft.Services.Core.WebApi.RestLogBase.html#Microsoft_Services_Core_WebApi_RestLogBase
+  commentId: T:Microsoft.Services.Core.WebApi.RestLogBase
+  fullName: Microsoft.Services.Core.WebApi.RestLogBase
+- uid: Microsoft.Services.Core.WebApi.RestLogBase.ApiVersion
+  name: ApiVersion
+  href: api/Microsoft.Services.Core.WebApi.RestLogBase.html#Microsoft_Services_Core_WebApi_RestLogBase_ApiVersion
+  commentId: P:Microsoft.Services.Core.WebApi.RestLogBase.ApiVersion
+  fullName: Microsoft.Services.Core.WebApi.RestLogBase.ApiVersion
+- uid: Microsoft.Services.Core.WebApi.RestLogBase.Method
+  name: Method
+  href: api/Microsoft.Services.Core.WebApi.RestLogBase.html#Microsoft_Services_Core_WebApi_RestLogBase_Method
+  commentId: P:Microsoft.Services.Core.WebApi.RestLogBase.Method
+  fullName: Microsoft.Services.Core.WebApi.RestLogBase.Method
+- uid: Microsoft.Services.Core.WebApi.RestLogBase.Uri
+  name: Uri
+  href: api/Microsoft.Services.Core.WebApi.RestLogBase.html#Microsoft_Services_Core_WebApi_RestLogBase_Uri
+  commentId: P:Microsoft.Services.Core.WebApi.RestLogBase.Uri
+  fullName: Microsoft.Services.Core.WebApi.RestLogBase.Uri
