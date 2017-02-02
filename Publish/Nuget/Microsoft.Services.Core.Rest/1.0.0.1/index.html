@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.4.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="introduction">Introduction</h1>
+              
+<p>This is a library to create RESTful clients in C#. The main advantage of using this library is that a lot of the boilerplate work is already done for you. 
+The library has built in support for the following:</p>
+<ul>
+<li>Threadsafe</li>
+<li>Json/Xml serialization</li>
+<li>Customizeable retry policies</li>
+<li>Support for <code>async</code> <code>await</code> in C#</li>
+<li>Customizeable status code validation</li>
+<li><code>System.Net.Http.HttpClient</code> based implementation</li>
+</ul>
+<h1 id="getting-started">Getting started</h1>
+<h2 id="quick-start">Quick start</h2>
+<ul>
+<li>Define the interface for your REST Client</li>
+<li>Use the <em>HttpRestClientFactory</em> to instantiate your client. </li>
+</ul>
+<pre><code class="lang-csharp">[HttpRestDefinition]
+[XmlOrJsonResponseFormatter, XmlRequestFormatter]
+public interface ICalculatorServiceClient
+{
+    [HttpRestInvoke(&quot;POST&quot;, &quot;/Add&quot;)]
+    [ExpectedStatusCodeValidator(new[] {HttpStatusCode.OK})]
+    string Add(string input);
+}
+
+....
+
+void Main()
+{
+      ICalculatorServiceClient client = HttpRestClientFactory.CreateClient&lt;ICalculatorServiceClient&gt;(new Uri(&quot;http://myServiceBaseUri&quot;), new HttpRestClientConfiguration());
+
+}
+</code></pre><h2 id="define-the-interface-for-your-rest-client">Define the interface for your rest client</h2>
+<ul>
+<li>The interface must be decorated with <code>[HttpRestDefinition]</code> attribute.</li>
+<li>The interface must be decorated with a request formatter (serializer) of your choosing. <ul>
+<li><code>[XmlRequestFormatter]</code> or <code>[JsonRequestFormatter]</code></li>
+</ul>
+</li>
+<li>The interface must be decorated with a response formatter of your choosing.<ul>
+<li><code>[XmlResponseFormatter]</code> or <code>[JsonResponseFormatter]</code> or<code>[XmlOrJsonResponseFomatter]</code></li>
+</ul>
+</li>
+<li>Define a method that would send the REST request</li>
+</ul>
+<h2 id="interface-method-definition">Interface method definition</h2>
+<p>Each interface method must be decorated with <code>[HttpRestInvoke(&quot;Method&quot;,&quot;RouteTemplate&quot;)]</code></p>
+<ul>
+<li><strong>Method</strong> = http method. Generally valid ones are GET PUT POST PATCH DELETE</li>
+<li><strong>RouteTemplate</strong> the is the uri fragment a request should be sent to.<ul>
+<li>Route templates can have argument references from the method definition. 
+See below:
+<code>csharp
+[HttpRestInvoke(&quot;GET&quot;, &quot;/Sub/{num1}/{num2}?queryString={version}&quot;)]
+[ExpectedStatusCodeValidator(new[] {HttpStatusCode.OK})]
+int Subtract(int num1, int num2, string version);</code></li>
+</ul>
+</li>
+</ul>
+<p><em>Note</em> With the exception of GET all requests would contain bodies. There must be at one least argument to a method.
+<em>Note:</em> Methods can be optionally decorated with <em>RequestFormatters</em> or <em>ResponseFormatters</em> to override the default defined at the interface level.</p>
+<h3 id="support-for-async-await">Support for async await</h3>
+<p>The libary supports async/await programming patterns. If a method returns <code>Task&lt;T&gt;</code> it can be awaited on.
+If a method has a <code>CancellationToken</code> argument it will be honored by the library.</p>
+<p>The following two examples are valid</p>
+<pre><code class="lang-csharp">    //Without cancellation token
+    [HttpRestInvoke(&quot;GET&quot;, &quot;/Sub/{num1}/{num2}?queryString={version}&quot;)]
+    [ExpectedStatusCodeValidator(new[] {HttpStatusCode.OK})]
+    Task&lt;int&gt; Subtract(int num1, int num2, string version);
+
+    //With cancellation token
+    [HttpRestInvoke(&quot;GET&quot;, &quot;/Sub/{num1}/{num2}?queryString={version}&quot;)]
+    [ExpectedStatusCodeValidator(new[] {HttpStatusCode.OK})]
+    Task&lt;int&gt; Subtract(int num1, int num2, string version, CancellationToken token);
+</code></pre><h2 id="custom-retry-policies">Custom retry policies</h2>
+<p>Retry policies can be implemented by deriving from <code>IRetryPolicy</code>. </p>
+<pre><code class="lang-csharp">/// &lt;summary&gt;
+/// A retry policy that would never retry
+/// &lt;/summary&gt;
+public class NoRetryPolicy : IRetryPolicy
+{
+    /// &lt;summary&gt;
+    /// Determines whether the exception should be retried
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;requestMessage&quot;&gt;The http request message&lt;/param&gt;
+    /// &lt;param name=&quot;exception&quot;&gt;The exception.&lt;/param&gt;
+    /// &lt;param name=&quot;attempt&quot;&gt;The current attempt. Starts at 0.&lt;/param&gt;
+    /// &lt;param name=&quot;delay&quot;&gt;The wait delay.&lt;/param&gt;
+    /// &lt;returns&gt;true to wait and retry. False to not retry&lt;/returns&gt;
+    public bool ShouldRetry(HttpRequestMessage requestMessage, Exception exception, int attempt, out TimeSpan delay)
+    {
+        delay = TimeSpan.FromMilliseconds(0);
+        return false;
+    }
+}
+</code></pre><p>To have the library honor retry policies, create your client with the appropriate retry policy for HttpConfiguration.</p>
+<pre><code class="lang-csharp">    ICalculatorServiceClient client = HttpRestClientFactory
+                .CreateClient&lt;ICalculatorServiceClient&gt;(new Uri(&quot;http://myServiceBaseUri&quot;),
+                    new HttpRestClientConfiguration(retryPolicy: new NoRetryPolicy()));
+</code></pre><h2 id="custom-request-and-response-formatters-for-serializers-like-bond">Custom Request and Response formatters (for serializers like bond)</h2>
+<p>One can implement custom Request and Response formatters by deriving from <code>HttpRestRequestFormatterAttributeBase</code> and <code>HttpRestResponseFormatterAttributeBase</code> respectively.
+The derived classes must provide an instance of a MediaTypeFormatter to do the actual serialization/deserialization. 
+One can implement a <code>MediaTypeFormatter</code> [MSDN]<a href="https://msdn.microsoft.com/en-us/library/system.net.http.formatting.mediatypeformatter(v=vs.118).aspx">https://msdn.microsoft.com/en-us/library/system.net.http.formatting.mediatypeformatter(v=vs.118).aspx</a> (an httpclient concept) and use it with this library. </p>
+<p>Look at this folder for <a href="https://msdata.visualstudio.com/HDInsight/Microservices/_git/Common-CSharp?path=%2FProduct%2Fsource%2FMicrosoft.Services.Core.Rest%2FFormatters&amp;version=GBDocumentation&amp;_a=contents">reference implementations</a> for Json/Xml request and response formatters.</p>
+<p>At high level the response formatters set header <code>Accept:</code> with the media type associated with formatter.</p>
+<p><strong>Note:</strong> Request and the response don&#39;t have to be the same.
+ For instance you can specify XML to for requests and JSON for responses. This accomplished via the use of two attributes that represent: request formatter and response formatter.</p>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://msdata.visualstudio.com/DefaultCollection/HDInsight/_git/Common-CSharp#path=/Product/source/Microsoft.Services.Core.Rest/index.md" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
