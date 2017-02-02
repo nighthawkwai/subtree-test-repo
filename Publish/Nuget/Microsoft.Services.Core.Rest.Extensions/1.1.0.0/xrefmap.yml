@@ -1,0 +1,268 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Microsoft.Services.Core.Rest.Extensions
+  name: Microsoft.Services.Core.Rest.Extensions
+  href: api/Microsoft.Services.Core.Rest.Extensions.html#Microsoft_Services_Core_Rest_Extensions
+  commentId: N:Microsoft.Services.Core.Rest.Extensions
+  fullName: Microsoft.Services.Core.Rest.Extensions
+- uid: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler
+  name: ClientRequestIdSetterHandler
+  href: api/Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_ClientRequestIdSetterHandler
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler
+  fullName: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler
+- uid: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.#ctor(System.Func{System.String})
+  name: ClientRequestIdSetterHandler(Func<String>)
+  href: api/Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_ClientRequestIdSetterHandler__ctor_System_Func_System_String__
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.#ctor(System.Func{System.String})
+  name.vb: ClientRequestIdSetterHandler(Func(Of String))
+  fullName: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.ClientRequestIdSetterHandler(System.Func<System.String>)
+  fullName.vb: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.ClientRequestIdSetterHandler(System.Func(Of System.String))
+- uid: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_ClientRequestIdSetterHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers
+  name: Microsoft.Services.Core.Rest.Extensions.Handlers
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.html#Microsoft_Services_Core_Rest_Extensions_Handlers
+  commentId: N:Microsoft.Services.Core.Rest.Extensions.Handlers
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler
+  name: CorrelationIdSetterHandler
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_CorrelationIdSetterHandler
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.#ctor(System.Func{System.String})
+  name: CorrelationIdSetterHandler(Func<String>)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_CorrelationIdSetterHandler__ctor_System_Func_System_String__
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.#ctor(System.Func{System.String})
+  name.vb: CorrelationIdSetterHandler(Func(Of String))
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.CorrelationIdSetterHandler(System.Func<System.String>)
+  fullName.vb: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.CorrelationIdSetterHandler(System.Func(Of System.String))
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_CorrelationIdSetterHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler
+  name: RestLoggerSetupHandler
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_RestLoggerSetupHandler
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.#ctor(System.Func{Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger})
+  name: RestLoggerSetupHandler(Func<IRestClientLogger>)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_RestLoggerSetupHandler__ctor_System_Func_Microsoft_Services_Core_Rest_Extensions_Logging_IRestClientLogger__
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.#ctor(System.Func{Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger})
+  name.vb: RestLoggerSetupHandler(Func(Of IRestClientLogger))
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.RestLoggerSetupHandler(System.Func<Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger>)
+  fullName.vb: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.RestLoggerSetupHandler(System.Func(Of Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger))
+- uid: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_RestLoggerSetupHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError
+  name: HttpError
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.HttpError
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionMessage
+  name: ExceptionMessage
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError_ExceptionMessage
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionMessage
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionMessage
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionType
+  name: ExceptionType
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError_ExceptionType
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionType
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError.ExceptionType
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError.InnerException
+  name: InnerException
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError_InnerException
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpError.InnerException
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError.InnerException
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError.Message
+  name: Message
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError_Message
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpError.Message
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError.Message
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpError.StackTrace
+  name: StackTrace
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpError.html#Microsoft_Services_Core_Rest_Extensions_HttpError_StackTrace
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpError.StackTrace
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpError.StackTrace
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpRestException
+  name: HttpRestException
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpRestException.html#Microsoft_Services_Core_Rest_Extensions_HttpRestException
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.HttpRestException
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpRestException
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpRestException.#ctor(Microsoft.Services.Core.Rest.Extensions.HttpError,System.String)
+  name: HttpRestException(HttpError, String)
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpRestException.html#Microsoft_Services_Core_Rest_Extensions_HttpRestException__ctor_Microsoft_Services_Core_Rest_Extensions_HttpError_System_String_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.HttpRestException.#ctor(Microsoft.Services.Core.Rest.Extensions.HttpError,System.String)
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpRestException.HttpRestException(Microsoft.Services.Core.Rest.Extensions.HttpError, System.String)
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpRestException.Error
+  name: Error
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpRestException.html#Microsoft_Services_Core_Rest_Extensions_HttpRestException_Error
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.HttpRestException.Error
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpRestException.Error
+- uid: Microsoft.Services.Core.Rest.Extensions.HttpRestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/Microsoft.Services.Core.Rest.Extensions.HttpRestException.html#Microsoft_Services_Core_Rest_Extensions_HttpRestException_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.HttpRestException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Microsoft.Services.Core.Rest.Extensions.HttpRestException.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+- uid: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy
+  name: LinearBackoffRetryPolicy
+  href: api/Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.html#Microsoft_Services_Core_Rest_Extensions_LinearBackoffRetryPolicy
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy
+  fullName: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy
+- uid: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.#ctor(System.Int32,System.TimeSpan)
+  name: LinearBackoffRetryPolicy(Int32, TimeSpan)
+  href: api/Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.html#Microsoft_Services_Core_Rest_Extensions_LinearBackoffRetryPolicy__ctor_System_Int32_System_TimeSpan_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.#ctor(System.Int32,System.TimeSpan)
+  fullName: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.LinearBackoffRetryPolicy(System.Int32, System.TimeSpan)
+- uid: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._delay
+  name: _delay
+  href: api/Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.html#Microsoft_Services_Core_Rest_Extensions_LinearBackoffRetryPolicy__delay
+  commentId: F:Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._delay
+  fullName: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._delay
+- uid: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._maxAttemptMaxAttemptCount
+  name: _maxAttemptMaxAttemptCount
+  href: api/Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.html#Microsoft_Services_Core_Rest_Extensions_LinearBackoffRetryPolicy__maxAttemptMaxAttemptCount
+  commentId: F:Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._maxAttemptMaxAttemptCount
+  fullName: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy._maxAttemptMaxAttemptCount
+- uid: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.ShouldRetry(System.Net.Http.HttpRequestMessage,System.Exception,System.Int32,System.TimeSpan@)
+  name: ShouldRetry(HttpRequestMessage, Exception, Int32, out TimeSpan)
+  href: api/Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.html#Microsoft_Services_Core_Rest_Extensions_LinearBackoffRetryPolicy_ShouldRetry_System_Net_Http_HttpRequestMessage_System_Exception_System_Int32_System_TimeSpan__
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.ShouldRetry(System.Net.Http.HttpRequestMessage,System.Exception,System.Int32,System.TimeSpan@)
+  name.vb: ShouldRetry(HttpRequestMessage, Exception, Int32, ByRef TimeSpan)
+  fullName: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.ShouldRetry(System.Net.Http.HttpRequestMessage, System.Exception, System.Int32, out System.TimeSpan)
+  fullName.vb: Microsoft.Services.Core.Rest.Extensions.LinearBackoffRetryPolicy.ShouldRetry(System.Net.Http.HttpRequestMessage, System.Exception, System.Int32, ByRef System.TimeSpan)
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging
+  name: Microsoft.Services.Core.Rest.Extensions.Logging
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.html#Microsoft_Services_Core_Rest_Extensions_Logging
+  commentId: N:Microsoft.Services.Core.Rest.Extensions.Logging
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse
+  name: IncomingRestResponse
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.html#Microsoft_Services_Core_Rest_Extensions_Logging_IncomingRestResponse
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.ClientName
+  name: ClientName
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.html#Microsoft_Services_Core_Rest_Extensions_Logging_IncomingRestResponse_ClientName
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.ClientName
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.ClientName
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.HttpStatusCode
+  name: HttpStatusCode
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.html#Microsoft_Services_Core_Rest_Extensions_Logging_IncomingRestResponse_HttpStatusCode
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.HttpStatusCode
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.HttpStatusCode
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.LatencyInMs
+  name: LatencyInMs
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.html#Microsoft_Services_Core_Rest_Extensions_Logging_IncomingRestResponse_LatencyInMs
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.LatencyInMs
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse.LatencyInMs
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger
+  name: IRestClientLogger
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.html#Microsoft_Services_Core_Rest_Extensions_Logging_IRestClientLogger
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse)
+  name: Trace(IncomingRestResponse)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.html#Microsoft_Services_Core_Rest_Extensions_Logging_IRestClientLogger_Trace_Microsoft_Services_Core_Rest_Extensions_Logging_IncomingRestResponse_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.IncomingRestResponse)
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest)
+  name: Trace(OutgoingRestRequest)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.html#Microsoft_Services_Core_Rest_Extensions_Logging_IRestClientLogger_Trace_Microsoft_Services_Core_Rest_Extensions_Logging_OutgoingRestRequest_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.IRestClientLogger.Trace(Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest)
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest
+  name: OutgoingRestRequest
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.html#Microsoft_Services_Core_Rest_Extensions_Logging_OutgoingRestRequest
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientName
+  name: ClientName
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.html#Microsoft_Services_Core_Rest_Extensions_Logging_OutgoingRestRequest_ClientName
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientName
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientName
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientRequestId
+  name: ClientRequestId
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.html#Microsoft_Services_Core_Rest_Extensions_Logging_OutgoingRestRequest_ClientRequestId
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientRequestId
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.OutgoingRestRequest.ClientRequestId
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler
+  name: RestApiRequestLoggingHandler
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestApiRequestLoggingHandler
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.#ctor(System.String)
+  name: RestApiRequestLoggingHandler(String)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestApiRequestLoggingHandler__ctor_System_String_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.#ctor(System.String)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.RestApiRequestLoggingHandler(System.String)
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestApiRequestLoggingHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestApiRequestLoggingHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase
+  name: RestLogBase
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestLogBase
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.ApiVersion
+  name: ApiVersion
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestLogBase_ApiVersion
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.ApiVersion
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.ApiVersion
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Method
+  name: Method
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestLogBase_Method
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Method
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Method
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Uri
+  name: Uri
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestLogBase_Uri
+  commentId: P:Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Uri
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestLogBase.Uri
+- uid: Microsoft.Services.Core.Rest.Extensions.Logging.RestValueProvider
+  name: RestValueProvider
+  href: api/Microsoft.Services.Core.Rest.Extensions.Logging.RestValueProvider.html#Microsoft_Services_Core_Rest_Extensions_Logging_RestValueProvider
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.Logging.RestValueProvider
+  fullName: Microsoft.Services.Core.Rest.Extensions.Logging.RestValueProvider
+- uid: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions
+  name: RestLoggerExtensions
+  href: api/Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.html#Microsoft_Services_Core_Rest_Extensions_RestLoggerExtensions
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions
+  fullName: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions
+- uid: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpRequestMessage)
+  name: GetLogger(HttpRequestMessage)
+  href: api/Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.html#Microsoft_Services_Core_Rest_Extensions_RestLoggerExtensions_GetLogger_System_Net_Http_HttpRequestMessage_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpRequestMessage)
+  fullName: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpRequestMessage)
+- uid: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpResponseMessage)
+  name: GetLogger(HttpResponseMessage)
+  href: api/Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.html#Microsoft_Services_Core_Rest_Extensions_RestLoggerExtensions_GetLogger_System_Net_Http_HttpResponseMessage_
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpResponseMessage)
+  fullName: Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger(System.Net.Http.HttpResponseMessage)
+- uid: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator
+  name: WebApiExpectedStatusCodeValidator
+  href: api/Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.html#Microsoft_Services_Core_Rest_Extensions_WebApiExpectedStatusCodeValidator
+  commentId: T:Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator
+  fullName: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator
+- uid: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.#ctor(System.Net.HttpStatusCode[])
+  name: WebApiExpectedStatusCodeValidator(HttpStatusCode[])
+  href: api/Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.html#Microsoft_Services_Core_Rest_Extensions_WebApiExpectedStatusCodeValidator__ctor_System_Net_HttpStatusCode___
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.#ctor(System.Net.HttpStatusCode[])
+  name.vb: WebApiExpectedStatusCodeValidator(HttpStatusCode())
+  fullName: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.WebApiExpectedStatusCodeValidator(System.Net.HttpStatusCode[])
+  fullName.vb: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.WebApiExpectedStatusCodeValidator(System.Net.HttpStatusCode())
+- uid: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.CreateHandler
+  name: CreateHandler()
+  href: api/Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.html#Microsoft_Services_Core_Rest_Extensions_WebApiExpectedStatusCodeValidator_CreateHandler
+  commentId: M:Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.CreateHandler
+  fullName: Microsoft.Services.Core.Rest.Extensions.WebApiExpectedStatusCodeValidator.CreateHandler()
