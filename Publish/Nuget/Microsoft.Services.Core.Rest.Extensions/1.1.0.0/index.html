@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx 2.4.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="introduction">Introduction</h1>
+              
+<p>This is an extension library that combines loggers to create a ton of utility classes for HttpClient and HttpRestClent</p>
+<h2 id="common-delegating-handlers">Common delegating Handlers</h2>
+<h3 id="clientrequestidsetterhandlerxrefmicrosoftservicescorerestextensionsclientrequestidsetterhandler"><a class="xref" href="api/Microsoft.Services.Core.Rest.Extensions.ClientRequestIdSetterHandler.html#Microsoft_Services_Core_Rest_Extensions_ClientRequestIdSetterHandler">ClientRequestIdSetterHandler</a></h3>
+<p>Sets header <code>client-request-id</code></p>
+<h3 id="correlationidsetterhandlerxreflmicrosoftservicescorerestextensionshandlerscorrelationidsetterhandler"><a href="xref:LMicrosoft.Services.Core.Rest.Extensions.Handlers.CorrelationIdSetterHandler">CorrelationIdSetterHandler</a></h3>
+<p>Sets header <code>x-ms-correlation-id</code></p>
+<h3 id="restapirequestlogginghandlerxrefmicrosoftservicescorerestextensionshandlersrestapirequestlogginghandler"><a href="xref:Microsoft.Services.Core.Rest.Extensions.Handlers.RestApiRequestLoggingHandler">RestApiRequestLoggingHandler</a></h3>
+<h3 id="restloggersetuphandlerxrefmicrosoftservicescorerestextensionsloggingrestloggersetuphandler"><a href="xref:Microsoft.Services.Core.Rest.Extensions.Logging.RestLoggerSetupHandler">RestLoggerSetupHandler</a></h3>
+<h2 id="common-logging-for-rest-apis">Common logging for REST APIS</h2>
+<p>An interface and contracts that encapsulate logging for REST API requests along with a trace logger:</p>
+<h3 id="tracing-within-delegating-handlers">Tracing within delegating handlers</h3>
+<p>You might want access to a logger without instantiating it in the delegating handler. This means somehow 
+one must be provided for you.</p>
+<ul>
+<li>Add  <a class="xref" href="api/Microsoft.Services.Core.Rest.Extensions.Handlers.RestLoggerSetupHandler.html#Microsoft_Services_Core_Rest_Extensions_Handlers_RestLoggerSetupHandler">RestLoggerSetupHandler</a> to the handler http delegating handler pipeline</li>
+<li>Rely on the the extension method <a href="xref:Microsoft.Services.Core.Rest.Extensions.RestLoggerExtensions.GetLogger">RestLoggerExtensions.GetLogger</a></li>
+</ul>
+<pre><code class="lang-csharp">      protected override Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, CancellationToken cancellationToken){
+        var resp = await base.SendAsync(request, token);
+        //Notice the use of the extensino method
+        reso.GetLogger().Info(&quot;Succeeded&quot;);
+      }
+</code></pre><pre><code class="lang-csharp">
+   [EventData]
+    public class OutgoingRestRequest : RestLogBase
+    {
+        public string ClientRequestId { get; set; }
+
+        public string ClientName { get; set; }
+    }
+
+    [EventData]
+    public class IncomingRestResponse : RestLogBase
+    {
+        public int LatencyInMs { get; set; }
+
+        public int HttpStatusCode { get; set; }
+
+        public string ClientName { get; set; }
+    }
+
+    [EventData]
+    public abstract class RestLogBase
+    {
+        public string Method { get; set; }
+
+        public string Uri { get; set; }
+
+        public string ApiVersion { get; set; }
+    }
+
+    [EventData]
+    public class RestValueProvider : CallContextLoggingValueProviderBase&lt;RestValueProvider&gt;
+    {
+
+    }
+
+    [EtwEventNameSuffix(&quot;-RestClient&quot;)]
+    [EtwEventSource(&quot;Microsoft-HdInsight&quot;)]
+    [EtwEventValueProvider(typeof(RestValueProvider))]
+    public interface IRestClientLogger : ITraceLogger
+    {
+        [EtwEventNamePrefix(&quot;HttpClientRequest&quot;)]
+        void Trace(OutgoingRestRequest request);
+
+        [EtwEventNamePrefix(&quot;HttpClientResponse&quot;)]
+        void Trace(IncomingRestResponse response);
+    }
+</code></pre>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://msdata.visualstudio.com/DefaultCollection/HDInsight/_git/Common-CSharp#path=/Product/source/Microsoft.Services.Core.Rest.Extensions/index.md" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
